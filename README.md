@@ -16,13 +16,13 @@ This project uses many tools like:
 Create the project.
 
 ```bash
-npx degit joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate my-app
+git clone https://github.com/rrzkmlnaa/hracademy-vite.git hracademy
 ```
 
 Access the project directory.
 
 ```bash
-cd my-app
+cd hracademy
 ```
 
 Install dependencies.
@@ -37,34 +37,10 @@ Serve with hot reload at <http://localhost:5173>.
 pnpm run dev
 ```
 
-### Lint
-
-```bash
-pnpm run lint
-```
-
-### Typecheck
-
-```bash
-pnpm run typecheck
-```
-
 ### Build
 
 ```bash
 pnpm run build
-```
-
-### Test
-
-```bash
-pnpm run test
-```
-
-View and interact with your tests via UI.
-
-```bash
-pnpm run test:ui
 ```
 
 ## License
