@@ -71,6 +71,10 @@ li:hover > ul {
   @apply text-[#1075b8];
 }
 
+.border-primary{
+  @apply border-[#1075b8];
+}
+
 .bg-warning {
   @apply bg-[#fef148];
 }

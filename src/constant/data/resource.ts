@@ -2,8 +2,8 @@ const ResourceData = [
   {
     slug: "cv-ats-template",
     category: "CV ATS Template",
-    title: "HR Academy Resume Template",
-    description: "The famous HR Academy resume template! It's landed tons of jobs. Take control of your career today, or work with one of our career consultants to get hired.",
+    title: "Template Resume Akademi SDM",
+    description: "Templat resume HR Academy yang terkenal! Telah mendapatkan banyak pekerjaan. Kendalikan karier Anda hari ini, atau bekerja sama dengan salah satu konsultan karier kami untuk mendapatkan pekerjaan.",
     buttonText: "dowload here",
     documentPATH: "/document/HR_Academy_CV_Template.pdf",
     link: "#"
@@ -12,29 +12,29 @@ const ResourceData = [
     slug: "cover-letter-template",
     category: "Cover Letter Template",
     title: "HR Academy Cover Letter Template",
-    description: "Unlock your dream job with the HR Academy Cover Letter Template. Expertly crafted to impress, it's your key to standing out and landing interviews. Take control of your career journey today with a proven formula for success.",
+    description: "Buka pekerjaan impian Anda dengan Templat Surat Lamaran dari HR Academy. Dibuat secara ahli untuk mengesankan, ini adalah kunci Anda untuk menonjol dan mendapatkan wawancara. Kendalikan perjalanan karier Anda hari ini dengan formula yang telah terbukti untuk sukses.",
     buttonText: "download here",
     documentPATH: "/document/HR_Academy_Cover_Letter_Template.pdf",
     link: "#"
   },
-  // {
-  //   slug: "interview-question",
-  //   category: "Interview Question",
-  //   title: "Networking Testing",
-  //   description: "The famous HR Academy resume template! It's landed tons of jobs. Take control of your career today, or work with one of our career consultants to get hired.",
-  //   buttonText: "Testing Button Name",
-  //   documentPATH: "/document/HR_Academy_CV_Template.pdf",
-  //   link: "#"
-  // },
-  // {
-  //   slug: "networking-template",
-  //   category: "networking template",
-  //   title: "Interview Testing",
-  //   description: "The famous HR Academy resume template! It's landed tons of jobs. Take control of your career today, or work with one of our career consultants to get hired.",
-  //   buttonText: "Testing Button Name",
-  //   documentPATH: "/document/HR_Academy_CV_Template.pdf",
-  //   link: "#"
-  // },
+  {
+    slug: "interview-question",
+    category: "Interview Question",
+    title: "Networking Testing",
+    description: "Templat resume HR Academy yang terkenal! Telah mendapatkan banyak pekerjaan. Kendalikan karier Anda hari ini, atau bekerja sama dengan salah satu konsultan karier kami untuk mendapatkan pekerjaan.",
+    buttonText: "Testing Button Name",
+    documentPATH: "/document/HR_Academy_CV_Template.pdf",
+    link: "#"
+  },
+  {
+    slug: "networking-template",
+    category: "networking template",
+    title: "Interview Testing",
+    description: "Templat resume HR Academy yang terkenal! Telah mendapatkan banyak pekerjaan. Kendalikan karier Anda hari ini, atau bekerja sama dengan salah satu konsultan karier kami untuk mendapatkan pekerjaan.",
+    buttonText: "Testing Button Name",
+    documentPATH: "/document/HR_Academy_CV_Template.pdf",
+    link: "#"
+  },
 ]
 
 export { ResourceData };

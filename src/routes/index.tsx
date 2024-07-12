@@ -6,6 +6,15 @@ const Home = lazy(() => import('pages/home'))
 const DetailArticle = lazy(() => import('pages/article/detail'))
 const PrivacyPolicy = lazy(() => import('pages/legal/privacyPolicy'))
 const TermOfService = lazy(() => import('pages/legal/termOfService'))
+const SuccessStory = lazy(() => import('pages/success-story/index'))
+const Services = lazy(() => import('pages/services/page'))
+const CareerDevelopment = lazy(() => import('pages/services/career-development/index'))
+const CareerCoaching = lazy(() => import('pages/services/career-development/slug/career-coacing'))
+const TrainingCertification = lazy(() => import('pages/services/training-and-certification/index'))
+const AboutUs = lazy(() => import('pages/about-us/page'))
+const Company = lazy(() => import('pages/about-us/company/index'))
+const ContactUs = lazy(() => import('pages/about-us/contact-us/index'))
+const Resources = lazy(() => import('pages/resources/index'))
 
 const Loading = () => <div>Loading...</div>
 
@@ -41,13 +50,85 @@ export const router = createBrowserRouter([
         )
       },
       {
+        path: '/success-story',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <SuccessStory />
+          </Suspense>
+        )
+      },
+      {
+        path: '/services',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Services />
+          </Suspense>
+        )
+      },
+      {
+        path: '/services/career-development',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <CareerDevelopment />
+          </Suspense>
+        )
+      },
+      {
+        path: '/services/career-development/career-coacing',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <CareerCoaching />
+          </Suspense>
+        )
+      },
+      {
+        path: '/services/training-and-certification',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <TrainingCertification />
+          </Suspense>
+        )
+      },
+      {
+        path: '/about-us',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <AboutUs />
+          </Suspense>
+        )
+      },
+      {
+        path: '/about-us/company',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Company />
+          </Suspense>
+        )
+      },
+      {
+        path: '/about-us/contact-us',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <ContactUs />
+          </Suspense>
+        )
+      },
+      {
+        path: '/resources',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Resources />
+          </Suspense>
+        )
+      },
+      {
         path: '/privacy-policy',
         element: (
           <Suspense fallback={<Loading />}>
             <PrivacyPolicy />
           </Suspense>
         )
-      }
+      },
     ]
   }
 ])
