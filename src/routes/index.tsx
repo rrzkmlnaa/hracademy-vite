@@ -15,6 +15,12 @@ const AboutUs = lazy(() => import('pages/about-us/page'))
 const Company = lazy(() => import('pages/about-us/company/index'))
 const ContactUs = lazy(() => import('pages/about-us/contact-us/index'))
 const Resources = lazy(() => import('pages/resources/index'))
+const SolutionsConsul = lazy (() => import('pages/services/solutions/ad-hoc-consulting-services/Index'))
+const SolutionsBoarding = lazy (() => import('pages/services/solutions/employee-on-boarding-and-off-boarding/Index'))
+const SolutionsResource = lazy (() => import('pages/services/solutions/human-resource-system/Index'))
+const SolutionsManagement = lazy (() => import('pages/services/solutions/payroll-management/Index'))
+const SolutionsCareer = lazy (() => import('pages/services/solutions/performance-and-career-management/Index'))
+const SolutionsTalent = lazy (() => import('pages/services/solutions/talent-recruitment/Index'))
 
 const Loading = () => <div>Loading...</div>
 
@@ -118,6 +124,54 @@ export const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading />}>
             <Resources />
+          </Suspense>
+        )
+      },
+      {
+        path: '/services/solutions/ad-hoc-consulting-services',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <SolutionsConsul />
+          </Suspense>
+        )
+      },
+      {
+        path: '/services/solutions/employee-on-boarding-and-off-boarding',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <SolutionsBoarding />
+          </Suspense>
+        )
+      },
+      {
+        path: '/services/solutions/human-resource-system',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <SolutionsResource />
+          </Suspense>
+        )
+      },
+      {
+        path: '/services/solutions/payroll-management',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <SolutionsManagement />
+          </Suspense>
+        )
+      },
+      {
+        path: '/services/solutions/performance-and-career-management',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <SolutionsCareer />
+          </Suspense>
+        )
+      },
+      {
+        path: '/services/solutions/talent-recruitment',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <SolutionsTalent />
           </Suspense>
         )
       },
