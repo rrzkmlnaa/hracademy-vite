@@ -22,13 +22,18 @@ const Breadcrumb = ({ homeElement, separator, containerClasses, listClasses, act
 
     const isHome = pathNames.length === 0;
 
-    const isSertifikasiHR = pathNames[0] === "sertifikasi-hr";
+    const isSertifikasiHR = pathNames[0] === "sertifikasi-hr";  
+    const isInformasiTraining = pathNames[0] === "informasi-training";  
 
     if (isHome) {
         return null;
     }
 
     if (isSertifikasiHR) {
+        return null;
+    }
+
+    if (isInformasiTraining) {
         return null;
     }
 

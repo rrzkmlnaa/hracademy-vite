@@ -3,7 +3,7 @@
 /* eslint-disable tailwindcss/classnames-order */
 import React, { useEffect, useState } from 'react'
 import { NavigationTypes, navigations } from 'constant/navigations'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { classNames } from 'utils'
 
 const Dropdown = ({ name, children, path }: NavigationTypes) => {
@@ -98,13 +98,17 @@ ease-in-out
 }
 
 const Navigation = () => {
-  const [scroll, setScroll] = useState(false)
+  const [scroll, setScroll] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
       setScroll(window.scrollY > 10)
     })
   })
+
+  // Fungsi untuk mengecek apakah kita berada di halaman "About Us"
+  const isAboutUsPage = location.pathname.startsWith('/informasi-training');
 
   return (
     <header
@@ -139,6 +143,20 @@ const Navigation = () => {
             </ul>
           </nav>
         </div>
+
+        {/* Tampilkan logo "LPK" hanya di halaman "About Us" */}
+        {isAboutUsPage && (
+                    <Link to="/about-us" className="block text-teal-600">
+                        <span className="sr-only">Home</span>
+                        <img
+                            src="/images/LPK.webp"
+                            width="160px"
+                            height="auto"
+                            alt="LPK-logo"
+                        />
+                    </Link>
+                )}
+
       </div>
     </header>
   )

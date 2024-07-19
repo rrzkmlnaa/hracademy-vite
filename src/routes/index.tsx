@@ -21,6 +21,7 @@ const SolutionsResource = lazy (() => import('pages/services/solutions/human-res
 const SolutionsManagement = lazy (() => import('pages/services/solutions/payroll-management/Index'))
 const SolutionsCareer = lazy (() => import('pages/services/solutions/performance-and-career-management/Index'))
 const SolutionsTalent = lazy (() => import('pages/services/solutions/talent-recruitment/Index'))
+const InformasiTraining = lazy (() => import('pages/informasi-training/index'))
 
 const Loading = () => <div>Loading...</div>
 
@@ -172,6 +173,14 @@ export const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading />}>
             <SolutionsTalent />
+          </Suspense>
+        )
+      },
+      {
+        path: '/informasi-training',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <InformasiTraining />
           </Suspense>
         )
       },
