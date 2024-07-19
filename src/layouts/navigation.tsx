@@ -17,8 +17,7 @@ const Dropdown = ({ name, children, path }: NavigationTypes) => {
         {children && (
           <span>
             <svg
-              className="size-4 fill-current transition duration-150 ease-in-out
-        group-hover:-rotate-180"
+              className="size-4 fill-current transition duration-150 ease-in-out group-hover:-rotate-180"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -60,8 +59,7 @@ const Dropdown = ({ name, children, path }: NavigationTypes) => {
                 <span className="pr-1 flex-1">{childItem.name}</span>
                 <span className="mr-auto">
                   <svg
-                    className="fill-current size-4 transition
-                duration-150 ease-in-out"
+                    className="fill-current size-4 transition duration-150 ease-in-out"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                   >
@@ -70,10 +68,7 @@ const Dropdown = ({ name, children, path }: NavigationTypes) => {
                 </span>
               </Link>
               <ul
-                className="absolute right-0 top-0 min-w-32 origin-top-left rounded-sm 
-border bg-white transition duration-150
-ease-in-out
-"
+                className="absolute right-0 top-0 min-w-32 origin-top-left rounded-sm border bg-white transition duration-150 ease-in-out"
               >
                 {childItem.children.map((nestedChildItem: NavigationTypes) => (
                   <li
@@ -144,19 +139,18 @@ const Navigation = () => {
           </nav>
         </div>
 
-        {/* Tampilkan logo "LPK" hanya di halaman "About Us" */}
+        {/* Tampilkan logo "LPK" hanya di halaman "About Us" pada versi mobile */}
         {isAboutUsPage && (
-                    <Link to="/about-us" className="block text-teal-600">
-                        <span className="sr-only">Home</span>
-                        <img
-                            src="/images/LPK.webp"
-                            width="160px"
-                            height="auto"
-                            alt="LPK-logo"
-                        />
-                    </Link>
-                )}
-
+          <Link to="/about-us" className="block text-teal-600 md:hidden">
+            <span className="sr-only">Home</span>
+            <img
+              src="/images/LPK.webp"
+              width="160px"
+              height="auto"
+              alt="LPK-logo"
+            />
+          </Link>
+        )}
       </div>
     </header>
   )
