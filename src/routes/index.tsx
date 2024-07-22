@@ -22,6 +22,7 @@ const SolutionsManagement = lazy (() => import('pages/services/solutions/payroll
 const SolutionsCareer = lazy (() => import('pages/services/solutions/performance-and-career-management/Index'))
 const SolutionsTalent = lazy (() => import('pages/services/solutions/talent-recruitment/Index'))
 const InformasiTraining = lazy (() => import('pages/informasi-training/index'))
+const SertifikasiHR = lazy (() => import('pages/sertifikasi-hr/index'))
 
 const Loading = () => <div>Loading...</div>
 
@@ -181,6 +182,14 @@ export const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading />}>
             <InformasiTraining />
+          </Suspense>
+        )
+      },
+      {
+        path: '/sertifikasi-hr',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <SertifikasiHR />
           </Suspense>
         )
       },
