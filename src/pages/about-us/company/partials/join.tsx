@@ -1,7 +1,7 @@
 'use client'
 
 import { Link } from "react-router-dom";
-import Button from "components/buttons/Button";
+import Button from "components/Button";
 
 export default function Join() {
   return (
@@ -13,14 +13,15 @@ export default function Join() {
         Indonesia di bawah Inkubator Koperasi dan Usaha Mikro, Kecil, <br className='hidden md:block' />dan Usaha Menengah,
         dengan nomor sertifikat 202100131.
         </p>
-        <Link to="https://api.whatsapp.com/send/?phone=6285942210575&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu%3F&type=phone_number&app_absent=0">
+          <div className="mt-8 flex flex-wrap justify-center text-center md:justify-start">
           <Button
-            variant='yellow'
-            className="border-none"
-          >
-            Gabung Sekarang
-          </Button>
-        </Link>
+            type="link"
+            to="https://api.whatsapp.com/send/?phone=6285942210575&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu%3F&type=phone_number&app_absent=0"
+            color="warning"
+            text="Gabung Sekarang"
+            rounded
+          />
+        </div>
       </section>
       <section className="bg-gray-100">
         <div className="mx-auto max-w-screen-xl content-center">

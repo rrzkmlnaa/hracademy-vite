@@ -1,9 +1,8 @@
-'use client'
-
 import { useEffect, useMemo, useState } from 'react';
 import { TbClover } from 'react-icons/tb';
 
-import Button from 'components/buttons/Button';
+import Button from 'components/Button';
+import Ready from 'components/buttons/Button';
 import UnstyledLink from 'components/links/UnstyledLink';
 
 import { ResourceData } from 'constant/index';
@@ -34,11 +33,15 @@ const Resources = ({ data }: TableProps) => {
             </div>
             <p>{item.description}</p>
           </div>
-          <UnstyledLink to ={`/resources/${item.slug}`} className='pt-5 flex justify-center items-center'>
-            <Button variant='primary' className='capitalize'>
-              {item.buttonText}
-            </Button>
-          </UnstyledLink>
+          <div className="mt-8 flex justify-center"> {/* Ubah di sini */}
+            <Button
+              type="link"
+              to={`/resources/${item.slug}`}
+              color="primary"
+              rounded
+              text={item.buttonText}
+            />
+          </div>
         </div>
       ))}
     </div>
@@ -64,14 +67,14 @@ const Resource = () => {
     <div className="container mx-auto w-full h-auto min-h-96">
       <div className="flex flex-wrap justify-center gap-3 px-6 xl:px-4 border-b-2 pb-5 border-primary">
         {categories.map((category, index) => (
-          <Button
+          <Ready
             key={index}
             variant={selectedCategory === category ? 'primary' : 'outline'}
             className="px-4 rounded-xl capitalize"
             onClick={() => handleCategoryClick(category)}
           >
             {category}
-          </Button>
+          </Ready>
         ))}
       </div>
       <Resources data={data.filter(item => item.category === selectedCategory)} />

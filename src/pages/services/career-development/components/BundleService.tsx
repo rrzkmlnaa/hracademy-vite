@@ -1,8 +1,8 @@
 'use client'
 
-import Button from 'components/buttons/Button';
+import Button from 'components/Button';
 import UnderlineLink from 'components/links/UnderlineLink';
-import UnstyledLink from 'components/links/UnstyledLink';
+// import UnstyledLink from 'components/links/UnstyledLink';
 
 export default function bundleService() {
     return (
@@ -26,14 +26,23 @@ export default function bundleService() {
                     <p>Persiapan Wawancara Sukses </p>
                     <p>Dukungan Berkelanjutan</p>
                 </div>
-                <UnstyledLink to='https://api.whatsapp.com/send/?phone=6285942210587&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu+jelaskan+lebih+lanjut+mengenai+.....%3F&type=phone_number&app_absent=0'>
+                {/* <UnstyledLink to='https://api.whatsapp.com/send/?phone=6285942210587&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu+jelaskan+lebih+lanjut+mengenai+.....%3F&type=phone_number&app_absent=0'>
                     <Button
                         variant='yellow'
                         size='base'
                     >
                         Mendaftar untuk Layanan Paket
                     </Button>
-                </UnstyledLink>
+                </UnstyledLink> */}
+                <div className="mt-8 flex flex-wrap justify-center text-center md:justify-start">
+                    <Button
+                        type="link"
+                        to="https://api.whatsapp.com/send/?phone=6285942210587&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu+jelaskan+lebih+lanjut+mengenai+.....%3F&type=phone_number&app_absent=0"
+                        color="warning"
+                        text=" Mendaftar untuk Layanan Paket"
+                        rounded
+                    />
+                </div>
             </div>
         </section>
     )

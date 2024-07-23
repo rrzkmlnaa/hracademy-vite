@@ -1,6 +1,6 @@
 'use client'
 
-import Button from 'components/buttons/Button';
+import Button from 'components/Button';
 
 export default function HRACademy() {
   return (
@@ -44,9 +44,15 @@ export default function HRACademy() {
           </div>
         </div>
       </div>
-      <Button variant="yellow" className="border-none">
-        Jelajahi Program Di Sini
-      </Button>
+      <div className="mt-8 flex flex-wrap justify-center text-center md:justify-start">
+          <Button
+            type="link"
+            to="/about-us/contact-us"
+            color="warning"
+            text="Jelajahi program Di Sini"
+            rounded
+          />
+        </div>
     </section>
   );
 }

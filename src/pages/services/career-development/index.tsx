@@ -1,9 +1,9 @@
 'use client'
 
 import Ready from 'components/benners/Banner';
-import Button from 'components/buttons/Button';
+import Button from 'components/Button';
 import Jumbotron from 'components/Jumbotron'
-import UnstyledLink from 'components/links/UnstyledLink';
+// import UnstyledLink from 'components/links/UnstyledLink';
 
 import BundleService from './components/BundleService';
 import CareerDevelopment from './components/CareerDevelopment';
@@ -37,13 +37,22 @@ export default function index() {
           <div className="block">
             <h2 className='text-3xl'>Ada pertanyaan tentang layanan kami?</h2>
             <h5 className='pb-5 pt-2 text-xl'>Mengobrol dengan Tim Sukses kami.</h5>
-            <UnstyledLink to='https://api.whatsapp.com/send/?phone=6285942210587&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu+jelaskan+lebih+lanjut+mengenai+.....%3F&type=phone_number&app_absent=0'>
+            {/* <UnstyledLink to='https://api.whatsapp.com/send/?phone=6285942210587&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu+jelaskan+lebih+lanjut+mengenai+.....%3F&type=phone_number&app_absent=0'>
               <Button
                 variant='yellow'
               >
                 Chat Now
               </Button>
-            </UnstyledLink>
+            </UnstyledLink> */}
+            <div className="mt-8 flex flex-wrap justify-center text-center md:justify-start">
+              <Button
+                type="link"
+                to="https://api.whatsapp.com/send/?phone=6285942210587&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu+jelaskan+lebih+lanjut+mengenai+.....%3F&type=phone_number&app_absent=0"
+                color="warning"
+                text="Chat Now"
+                rounded
+              />
+            </div>
           </div>
           <img
             src='/images/dummy2.png'

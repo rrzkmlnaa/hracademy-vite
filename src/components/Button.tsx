@@ -6,7 +6,7 @@ export type ButtonProps = {
   text: string
   type: 'button' | 'submit' | 'link'
   to?: string
-  color?: 'primary' | 'warning' | 'error'
+  color?: 'primary' | 'warning' | 'error' | 'black' | 'white'
   rounded?: boolean
   action?: () => void
 }
@@ -31,8 +31,14 @@ const colorObj = {
     background: 'bg-[#000000]',
     foreground: 'text-[#fff]',
     active: 'active:bg-[#333333]'
+  },
+  white: {
+    background: 'bg-[#ffffff]',
+    foreground: 'text-[#000000]', // Biasanya foreground putih adalah hitam atau warna gelap agar teks tetap terbaca
+    active: 'active:bg-[#f0f0f0]' // Pilihan warna saat aktif, bisa disesuaikan
   }
-}
+};
+
 
 const Button = ({
   text,
@@ -49,7 +55,7 @@ const Button = ({
     return (
       <Link
         className={classNames(
-          'group relative inline-flex items-center overflow-hidden px-8 py-3 focus:outline-none focus:ring',
+          'group relative inline-flex items-center overflow-hidden capitalize px-8 py-3 focus:outline-none focus:ring',
           background,
           foreground,
           active,
