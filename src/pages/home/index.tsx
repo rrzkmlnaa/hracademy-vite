@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from 'components/Button'
 import Jumbotron from 'components/Jumbotron'
-import Client from './partials/client'
+import Client, { clients } from 'components/Client';
 import Role, { roles } from './partials/role'
 import Why from './partials/why'
 import Career from './partials/career'
@@ -13,6 +13,9 @@ import Featured from './partials/articles'
 
 const Home = () => {
   const selectedRoles = roles.slice(0, 3)
+  const selectedClients = clients.slice(0, 11);
+  const imagUrls = selectedClients.map(client => client.src);
+  const alts = selectedClients.map(client => client.alt);
 
   return (
     <>
@@ -42,7 +45,12 @@ const Home = () => {
           />
         </div>
       </Jumbotron>
-      <Client />
+      <Client
+        bgColor='bg-slate-100 py-20 md:py-32'
+        title='Klien kami sekarang bekerja di'
+        imagUrls={imagUrls}
+        alts={alts}
+      />
       <Role
         title="TEMUKAN SOLUSI KHUSUS UNTUK ANDA"
         bgColor="bg-gray-100"

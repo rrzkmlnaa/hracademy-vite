@@ -17,7 +17,16 @@ import Faq from './partials/Faq'
 import Coach from './partials/coach'
 import UnstyledLink from 'components/links/UnstyledLink'
 
+import { downloadFile } from "handler/DownloadFile";
+
 export default function Index() {
+
+  const handleDownloadClick = () => {
+    const documentUrl = '/document/HR-Academy-Pelatihan-Sertifikasi-SDM-BNSP-Double-Degree.pdf';
+
+    downloadFile(documentUrl, 'HR-Certification-Document.pdf')
+  };
+
   return (
     <>
       <Jumbotron imageName='banner-landingpage.webp'>
@@ -83,16 +92,15 @@ export default function Index() {
             Daftar Sertifikasi HR Sekarang
           </Ready>
         </UnstyledLink>
-        <UnstyledLink to='/#role'>
           <Ready
             isLoading={false}
             variant='dark'
             size='base'
             className='border-0 rounded-r-md p-3 md:p-5 rounded-l-none text-sm md:text-base'
+            onClick={handleDownloadClick} 
           >
             Unduh Katalog Program Sertifikasi HR
           </Ready>
-        </UnstyledLink>
       </div>
 
 

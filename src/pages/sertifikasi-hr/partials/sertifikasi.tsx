@@ -7,12 +7,9 @@ export default function sertifikasi() {
         Sertifikasi HR Terbaik untuk <br /> Profesional SDM di Indonesia
       </h2>
       <div className='mt-10 md:p-12'>
-        <p className=" text-[18px] md:text-xl mx-auto text-left ml-4 leading-relaxed">
-          Sertifikasi HR merupakan salah satu langkah penting untuk pengembangan karier di bidang Sumber Daya Manusia (SDM). 
-          Bagi para profesional SDM di Indonesia, memiliki sertifikasi HR tidak hanya meningkatkan kredibilitas,
-          tetapi juga memberikan kompetensi yang dibutuhkan untuk menghadapi tantangan dalam pengelolaan sumber daya manusia.
-          Sertifikasi HR menjadi kunci untuk memastikan bahwa individu dan perusahaan dapat mengikuti standar terbaik dalam praktik HR, 
-          yang pada akhirnya akan meningkatkan efisiensi dan efektivitas organisasi.
+        <p className=" text-[18px] md:text-2xl mx-auto text-justify sm:text-left md:text-left lg:text-left lg:ml-4 md:ml-4 leading-relaxed">
+          Sertifikasi HR penting untuk pengembangan karier di SDM. Ini meningkatkan kredibilitas dan kompetensi profesional di Indonesia. 
+          Sertifikasi memastikan standar terbaik, serta efisiensi dan efektivitas organisasi.
         </p>
       </div>
     </section>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Jumbotron from '../../../components/jumbo/jumbot';
-import Button from '../../../components/buttons/Button';
+import Button from '../../../components/Button';
 import UnstyledLink from '../../../components/links/UnstyledLink'
 
 
@@ -20,11 +20,17 @@ export default function join () {
             </p>
 
             <div className='mt-8 flex flex-wrap text-center justify-center md:justify-start'>
-                <UnstyledLink to ='https://api.whatsapp.com/send/?phone=6285942210587&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu+jelaskan+lebih+lanjut+mengenai+.....%3F&type=phone_number&app_absent=0 '>
+                {/* <UnstyledLink to ='https://api.whatsapp.com/send/?phone=6285942210587&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu+jelaskan+lebih+lanjut+mengenai+.....%3F&type=phone_number&app_absent=0 '>
                     <Button isLoading={false} variant='yellow' className='border-0 p-3 rounded-none font-bold'>
                         HUBUNGI ADMIN
                     </Button>
-                </UnstyledLink>
+                </UnstyledLink> */}
+                <Button
+                    type="link"
+                    to="https://api.whatsapp.com/send/?phone=6285942210587&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu+jelaskan+lebih+lanjut+mengenai+.....%3F&type=phone_number&app_absent=0 "
+                    color="warning"
+                    text="HUBUNGI ADMIN"
+                />
             </div>
         </Jumbotron>
         </>

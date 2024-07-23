@@ -1,4 +1,5 @@
 import ArrowLink from './links/ArrowLink';
+import Button from './Button'
 
 export interface propTypes {
   bgColor: string;
@@ -38,11 +39,9 @@ const Client = ({ bgColor, title, imagUrls, alts, readMore }: propTypes) => {
             />
           ))}
         </div>
-        <div className={`text-center ${readMore}`}>
-          <ArrowLink href='/' className='text-primary-500'>
-            Read success stories
-          </ArrowLink>
-        </div>
+        <div className={`text-center mt-10 ${readMore}`}>
+        <Button type="link" text="Read Success Story" to="/success-story" />
+      </div>
       </div>
     </section>
   );

@@ -19,6 +19,7 @@ type ButtonProps = {
     leftIcon?: string;
     rightIcon?: string;
   };
+  onClick?: () => void; // Tambahkan onClick props di sini
 } & React.ComponentPropsWithRef<'button'>;
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -34,6 +35,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       leftIcon: LeftIcon,
       rightIcon: RightIcon,
       classNames,
+      onClick, // Tambahkan onClick props di sini
       ...rest
     },
     ref
@@ -104,6 +106,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             'relative text-transparent transition-none hover:text-transparent disabled:cursor-wait',
           className
         )}
+        onClick={onClick} // Gunakan onClick di sini
         {...rest}
       >
         {isLoading && (
@@ -163,5 +166,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     );
   }
 );
+
+Button.displayName = 'Button';
 
 export default Button;
