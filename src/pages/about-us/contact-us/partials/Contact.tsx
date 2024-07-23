@@ -137,7 +137,7 @@ export default function Contact() {
               alt='Customer Service UI'
               className="w-1/4 h-auto object-cover hover:scale-110 duration-150"
             />
-            <h1 className="text-4xl font-bold text-center">Terhubung dengan <br /> Tim Pakar <br /> Kami</h1>
+            <h2 className="text-4xl font-bold text-center">Terhubung dengan <br /> Tim Pakar <br /> Kami</h2>
           </div>
         </div>
       </div>

@@ -9,9 +9,9 @@ export default function join () {
     return (
         <>
         <Jumbotron imageName='linkedin-rev.png'>
-            <h1 className='text-5xl font-extrabold text-center md:text-start'>
+            <h5 className='text-5xl font-extrabold text-center md:text-start'>
                 Optimalkan Potensi HR Anda Sekarang!
-            </h1>
+            </h5>
 
             <p className='mt-4 max-w-lg text-xl/relaxed text-center md:text-start'>
                 Gabung dengan 400+ alumni

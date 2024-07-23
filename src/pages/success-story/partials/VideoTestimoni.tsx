@@ -47,8 +47,8 @@ export default function VideoTestimoni() {
         <section className="bg-primary text-white py-20">
             <div className="container mx-auto w-full h-auto py-">
                 <div className="px-6 text-white text-center flex flex-col gap-4">
-                    <h1 className='text-4xl font-bold'>Pelatihan dan Sertifikasi SDM</h1>
-                    <h4 className='font-bold'>Testimoni Video</h4>
+                    <h2 className='text-4xl font-bold'>Pelatihan dan Sertifikasi SDM</h2>
+                    <h3 className='font-bold'>Testimoni Video</h3>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 py-10 px-5 gap-5">
                     {data.map((item, index) => (

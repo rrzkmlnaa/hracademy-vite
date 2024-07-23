@@ -32,7 +32,7 @@ export default function Companys() {
       <Ready
         colorstyle='bg-blue-800 text-white p-10'
       >
-        <h1 className='text-center font-bold text-4xl'>Siap untuk meningkatkan kesuksesan Anda?</h1>
+        <h2 className='text-center font-bold text-4xl'>Siap untuk meningkatkan kesuksesan Anda?</h2>
         <div className='my-5 flex flex-wrap justify-center'>
           <UnstyledLink to ='/about-us/contact-us'>
             <Button

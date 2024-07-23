@@ -43,9 +43,9 @@ export default function Roles({
     <Jumbotron imageName='training-sertif-banner.webp'>
     <section id="role" className={`${bgColor} py-20`}>
       <div className="mx-auto max-w-screen-xl text-center">
-      <h2 className="text-white p-3 text-2xl md:text-4xl font-bold uppercase mb-5 mt-2 md:mb-10">
+      <h5 className="text-white p-3 text-2xl md:text-4xl font-bold uppercase mb-5 mt-2 md:mb-10">
             {title}
-          </h2>
+          </h5>
         <br />
         <div className="flex flex-wrap justify-center gap-5">
           {roles.map((role, index) => (

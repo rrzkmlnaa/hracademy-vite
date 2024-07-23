@@ -23,7 +23,7 @@ export default function Roles({ title = '', subtitle = '', bgColor = '', titleSt
   return (
     <section id='role' className={`${bgColor} py-20`}>
       <div className="max-w-screen-xl mx-auto">
-        <h5 className='text-[#004AAD] text-2xl p-3 uppercase font-bold text-center'>{title}</h5>
+        <h5 className='text-[#004AAD] text-2xl lg:text-5xl p-3 uppercase font-bold text-center'>{title}</h5>
         <p className='text-base text-gray-500 text-center'>{subtitle}</p>
         <div className='flex flex-wrap justify-center gap-5 mt-14'>
           {roles.map((role, index) => (

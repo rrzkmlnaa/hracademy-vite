@@ -3,7 +3,7 @@ import React from 'react';
 const CertificationAdvantages = () => {
     return (
         <section className='text-center mt-10'>
-            <h3 className='uppercase text-primary font-bold text-2xl py-5 mb-10'>Keunggulan Sertifikasi HR di HR Academy </h3>
+            <h3 className='uppercase text-primary font-bold text-2xl md:text-5xl px-5 py-5 mb-10'>Keunggulan Sertifikasi HR di HR Academy </h3>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full h-auto lg:h-80'>
                 <div className='flex flex-col justify-center bg-blue-600 p-5'>
                     <h4 className='text-gray-200 font-bold text-xl sm:text-2xl md:text-3xl lg:text-2xl text-wrap mb-4 lg:mb-10'>Double Degree</h4>

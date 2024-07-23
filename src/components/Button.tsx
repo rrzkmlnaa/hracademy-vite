@@ -26,6 +26,11 @@ const colorObj = {
     background: 'bg-[#ff4d4f]',
     foreground: 'text-[#fff]',
     active: 'active:bg-[#ff7875]'
+  },
+  black: {
+    background: 'bg-[#000000]',
+    foreground: 'text-[#fff]',
+    active: 'active:bg-[#333333]'
   }
 }
 

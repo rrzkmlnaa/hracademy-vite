@@ -47,10 +47,6 @@ export const navigations: NavigationTypes[] = [
       }
     ]
   },
-  // {
-  //   name: "Class",
-  //   path: "/class",
-  // },
   {
     name: 'Resources',
     path: '/resources'
@@ -62,17 +58,20 @@ export const navigations: NavigationTypes[] = [
   {
     name: 'Issues',
     path: '/featured'
-    // children: [
-    //   {
-    //     name: "Event",
-    //     path: "/"
-    //   }
-    // ]
   },
-  // {
-  //   name: "Careers",
-  //   path: "/",
-  // },
+  {
+    name: 'Pages',
+    children: [
+      {
+        name: 'Sertifikasi HR',
+        path: '/pages/sertifikasi-hr'
+      },
+      {
+        name: 'Informasi Training',
+        path: '/pages/informasi-training'
+      }
+    ]
+  },
   {
     name: 'About Us',
     children: [

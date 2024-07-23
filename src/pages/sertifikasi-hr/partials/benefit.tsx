@@ -1,4 +1,3 @@
-
 import { IconBaseProps } from "react-icons";
 import { FaCheckCircle } from "react-icons/fa";
 
@@ -39,22 +38,20 @@ export default function ManfaatSertifikasiHR() {
           <div className="md:text-left md:col-span-1 ml-7 md:ml-0"> {/* Menambahkan margin di sebelah kiri */}
             <h4 className="text-2xl md:text-3xl font-bold text-white mb-4 md:ml-6">Manfaat Sertifikasi HR</h4>
             {data.map((item, index) => (
-              <div key={index} className='flex flex-wrap gap-1 sm:gap-3 pt-5 pl-2 md:pl-5 pb-2'>
+              <div key={index} className='flex flex-wrap gap-1 sm:gap-3 pt-5 pb-2'>
                 <item.icon size='2rem' color='#EDB526' />
                 <div>
-                  <p className="place-self-center text-white font-bold text-lg sm:text-xl">{item.title}</p> {/* Menyesuaikan ukuran font */}
-                  <p className="text-xs sm:text-sm text-gray-300">{item.subtitle}</p> {/* Menyesuaikan ukuran font */}
+                  <p className="place-self-center text-white font-bold text-[16px] m-[5px] sm:text-xl">{item.title}</p> {/* Menyesuaikan ukuran font */}
+                  <p className="text-xs sm:text-sm text-gray-300 hidden md:block">{item.subtitle}</p> {/* Menyembunyikan subtitle di versi mobile */}
                 </div>
               </div>
             ))}
           </div>
-          <div className="flex items-center justify-center md:text-right md:col-span-1"> {/* Menyesuaikan col-span untuk memperkecil bagian kanan */}
+          <div className="flex items-center justify-center md:text-right md:col-span-1">
             <img
               src="/images/exclusive-hr-webinar.jpg"
               alt="HR Certification"
-              width={300}
-              height={300}
-              className='rounded-md'
+              className="w-[200px] md:w-[200px] lg:w-[280px] rounded-md" // Mengatur lebar gambar agar responsif
             />
           </div>
         </div>

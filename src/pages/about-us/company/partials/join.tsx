@@ -7,7 +7,7 @@ export default function Join() {
   return (
     <>
       <section className="mx-auto max-w-screen-xl my-24 px-6 md:px-10">
-        <h1 className="font-bold text-4xl">Bergabung dengan HRA UMKM</h1>
+        <h4 className="font-bold text-4xl">Bergabung dengan HRA UMKM</h4>
         <p className="py-5 text-justify">Kami juga berperan sebagai mitra pengembangan Usaha Kecil, Mikro, dan Menengah (UKM),
         inkubator terdaftar yang terakreditasi <br className='hidden md:block' /> oleh Kementerian Koperasi dan UKM Republik Indonesia di bawah
         Indonesia di bawah Inkubator Koperasi dan Usaha Mikro, Kecil, <br className='hidden md:block' />dan Usaha Menengah,

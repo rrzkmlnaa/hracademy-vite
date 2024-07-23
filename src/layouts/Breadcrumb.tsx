@@ -22,8 +22,8 @@ const Breadcrumb = ({ homeElement, separator, containerClasses, listClasses, act
 
     const isHome = pathNames.length === 0;
 
-    const isSertifikasiHR = pathNames[0] === "sertifikasi-hr";  
-    const isInformasiTraining = pathNames[0] === "informasi-training";  
+    const isSertifikasiHR = pathNames[1] === "sertifikasi-hr";  
+    const isInformasiTraining = pathNames[1] === "informasi-training";  
 
     if (isHome) {
         return null;

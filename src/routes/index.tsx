@@ -23,6 +23,9 @@ const SolutionsCareer = lazy (() => import('pages/services/solutions/performance
 const SolutionsTalent = lazy (() => import('pages/services/solutions/talent-recruitment/Index'))
 const InformasiTraining = lazy (() => import('pages/informasi-training/index'))
 const SertifikasiHR = lazy (() => import('pages/sertifikasi-hr/index'))
+const ResourceFrom = lazy (() => import('pages/resources/slug/page'))
+const Artikel = lazy (() => import('pages/featured/slug/page'))
+const Featured = lazy (() => import('pages/featured/index'))
 
 const Loading = () => <div>Loading...</div>
 
@@ -47,8 +50,6 @@ export const router = createBrowserRouter([
           </Suspense>
         )
       },
-
-      // Legal Page
       {
         path: '/term-of-service',
         element: (
@@ -178,7 +179,7 @@ export const router = createBrowserRouter([
         )
       },
       {
-        path: '/informasi-training',
+        path: '/pages/informasi-training',
         element: (
           <Suspense fallback={<Loading />}>
             <InformasiTraining />
@@ -186,10 +187,34 @@ export const router = createBrowserRouter([
         )
       },
       {
-        path: '/sertifikasi-hr',
+        path: '/pages/sertifikasi-hr',
         element: (
           <Suspense fallback={<Loading />}>
             <SertifikasiHR />
+          </Suspense>
+        )
+      },
+      {
+        path: '/resources/:slug',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <ResourceFrom />
+          </Suspense>
+        )
+      },
+      {
+        path: '/featured/:slug',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Artikel />
+          </Suspense>
+        )
+      },
+      {
+        path: '/featured',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Featured />
           </Suspense>
         )
       },

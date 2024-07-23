@@ -1,6 +1,7 @@
 'use client'
 
-import Button from 'components/buttons/Button'
+import Button from 'components/Button'
+import Ready from 'components/buttons/Button'
 import Jumbotron from 'components/Jumbotron'
 
 import Sertifikasi from './partials/sertifikasi'
@@ -29,12 +30,13 @@ export default function Index() {
           Mulai dari staff hingga GENERAL MANAGER HR, tingkatkan karier Anda dengan program kami.
         </p>
 
-        <div className='mt-8 flex flex-wrap text-center justify-center md:justify-start'>
-          <UnstyledLink to ='/about-us/contact-us'>
-            <Button isLoading={false} variant='yellow' className='border-0 rounded-none font-bold'>
-              Daftar Sekarang
-            </Button>
-          </UnstyledLink>
+        <div className="mt-8 flex flex-wrap justify-center text-center md:justify-start">
+          <Button
+            type="link"
+            to="/about-us/contact-us"
+            color="warning"
+            text="Daftar Sekarang"
+          />
         </div>
       </Jumbotron>
 
@@ -70,28 +72,29 @@ export default function Index() {
 
       <Coach />
 
-      <div className='flex justify-center items-center mb-20'>
-      <UnstyledLink to ='/about-us/contact-us'>
-            <Button
-              isLoading={false}
-              variant='primary'
-              size='base'
-              className='border-0 rounded-l-md rounded-r-none p-5'
-            >
-              Daftar Sertifikasi HR Sekarang
-            </Button>
-          </UnstyledLink>
-          <UnstyledLink to ='/#role'>
-            <Button
-              isLoading={false}
-              variant='dark'
-              size='base'
-              className='border-0 rounded-r-md p-5 rounded-l-none'
-            >
-              Unduh Katalog Program Sertifikasi HR
-            </Button>
-          </UnstyledLink>
-          </div>
+      <div className='flex justify-center items-center mb-20 px-10 md:px-0'>
+        <UnstyledLink to='/about-us/contact-us'>
+          <Ready
+            isLoading={false}
+            variant='primary'
+            size='base'
+            className='border-0 rounded-l-md rounded-r-none p-3 md:p-5 text-sm md:text-base'
+          >
+            Daftar Sertifikasi HR Sekarang
+          </Ready>
+        </UnstyledLink>
+        <UnstyledLink to='/#role'>
+          <Ready
+            isLoading={false}
+            variant='dark'
+            size='base'
+            className='border-0 rounded-r-md p-3 md:p-5 rounded-l-none text-sm md:text-base'
+          >
+            Unduh Katalog Program Sertifikasi HR
+          </Ready>
+        </UnstyledLink>
+      </div>
+
 
     </>
   )

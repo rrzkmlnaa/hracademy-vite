@@ -16,10 +16,10 @@ export default function Coach() {
           className='w-1/2 md:w-full px-auto hover:scale-110 duration-150'
         />
         <div className="flex flex-warp flex-col gap-3 justify-start">
-          <UnderlineLink to ='#coach' className='text-gray-500 text-xl w-fit'>
+          <UnderlineLink to ='#coach' className='text-gray-500 text-lg lg:text-xl w-fit'>
             CEO, PELATIH SENIOR
           </UnderlineLink>
-          <h1 className='font-bold text-primary text-4xl'>TEMUI PEMIMPIN KAMI</h1>
+          <h2 className='font-bold text-primary text-xl lg:text-3xl'>TEMUI PEMIMPIN KAMI</h2>
           <h3 className='font-bold text-primary text-2xl'>SRI WULANDARI, EPC, S.IP, MBA.</h3>
           <p className="text-justify">
             Coach Wulan, visioner di balik HR Academy, membawa
@@ -32,8 +32,8 @@ export default function Coach() {
             Coach Wulan berkomitmen untuk memberdayakan individu
             untuk unggul dalam perjalanan profesional mereka.
           </p>
-          <p className='font-bold mt-5 md:mt-24'>Hubungi Coach Wulan</p>
-          <div className="flex justify-start flex-nowrap gap-5 text-primary">
+          <p className='font-bold mt-5 md:mt-24 ml-1'>Hubungi Coach Wulan</p>
+          <div className="flex justify-start flex-nowrap gap-5 ml-1 text-primary">
             <UnstyledLink to ='https://www.facebook.com/hracademy1/'><FaFacebookSquare size='1.5em' /></UnstyledLink>
             <UnstyledLink to =''><FaTwitter size='1.5em'/></UnstyledLink>
             <UnstyledLink to ='https://www.instagram.com/coachwulan_/'><FaInstagram size='1.5em' /></UnstyledLink>

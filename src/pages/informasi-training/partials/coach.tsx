@@ -14,12 +14,12 @@ export default function Coach() {
                             alt='coach wulan'
                             className='w-10/12 md:w-full filter grayscale transition-all duration-500 ease-in-out hover:grayscale-0'
                         />
-                        <h1 className="absolute bottom-0 bg-white bg-opacity-75 text-center font-bold text-primary text-lg md:text-xl py-2 transition-all duration-500 ease-in-out w-full md:w-11/12 mx-auto">
+                        <h5 className="absolute bottom-0 bg-white bg-opacity-75 text-center font-bold text-primary text-lg md:text-xl py-2 transition-all duration-500 ease-in-out w-full md:w-11/12 mx-auto">
                             DIAJAR OLEH EXPERT
-                        </h1>
+                        </h5>
                     </div>
                     <div className="flex flex-col gap-3 md:gap-5 justify-start">
-                        <h3 className='font-bold text-white text-start text-2xl md:text-3xl underline'>SRI WULANDARI, EPC, S.IP, MBA.</h3>
+                        <h6 className='font-bold text-white text-start text-2xl md:text-3xl underline'>SRI WULANDARI, EPC, S.IP, MBA.</h6>
                         <p className='font-normal text-justify text-sm md:text-base'>
                             Head Trainer/Founder
                             Former HR Director of Mattel Asia Pacific, SC Johnson, HERO Group, and AJE

@@ -46,7 +46,7 @@ export default function ActualCareer() {
     
     return (
         <section className="container mx-auto w-full h-auto py-32">
-            <h1 className="text-center px-6 font-bold text-4xl mb-5">Mengubah Mimpi Menjadi Karier yang Nyata</h1>
+            <h2 className="text-center px-6 font-bold text-4xl mb-5">Mengubah Mimpi Menjadi Karier yang Nyata</h2>
             <Swiper
                 slidesPerView={1}
                 breakpoints={{

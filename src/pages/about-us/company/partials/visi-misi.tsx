@@ -16,7 +16,7 @@ export default function VisiMisi() {
             <div className="hidden md:block"></div>
             <div className="hidden md:block"></div>
             <div className='flex flex-col gap-5 md:gap-10 md:col-span-2'>
-              <h1 className='text-3xl md:text-4xl text-center md:text-start'>Misi & Visi Kami</h1>
+              <h4 className='text-3xl md:text-4xl text-center md:text-start'>Misi & Visi Kami</h4>
               <p className='text-base md:text-lg text-left'>HR Academy digerakkan oleh misi untuk mengembangkan pemimpin-pemimpin luar biasa yang akan membuka jalan bagi masa depan Indonesia yang lebih maju.</p>
               <p className='text-base md:text-lg text-left'>Visi kami adalah mengubah pemikiran kritis menjadi solusi praktis untuk masalah yang ada. Kami berkolaborasi dengan banyak komunitas, organisasi, mitra pendidikan, institusi, dan bahkan lintas negara untuk dapat memperoleh beragam keterampilan, menciptakan lapangan kerja baru, menghasilkan lulusan yang siap kerja, menginspirasi generasi muda, dan memberikan dampak positif bagi masyarakat.</p>
             </div>

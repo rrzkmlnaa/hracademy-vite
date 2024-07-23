@@ -33,7 +33,7 @@ const FeaturedItem = ({ title, imageUrl, alt, slug }: FeaturedItemProps) => {
         className="h-auto w-full place-self-center rounded-md object-cover"
       />
       <div className="w-full overflow-hidden">
-        <Link to={`/articles/${slug}`}>
+        <Link to={`/featured/${slug}`}>
           <h3 className="h-24 w-full overflow-hidden font-sans text-lg font-extrabold text-lime-200">
             {title}
           </h3>
@@ -83,7 +83,7 @@ export default function Featured({
       <div className="pb-12 text-center">
         <Button
           type="link"
-          to="/articles"
+          to="/featured"
           text="Lihat Semua Artikel"
           color="warning"
           rounded

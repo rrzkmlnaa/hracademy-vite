@@ -40,7 +40,7 @@ export default function Index() {
       <Banner
         colorstyle='bg-slate-100 text-white pt-10'
       >
-        <h1 className='text-center text-primary px-6 text-4xl font-bold'>Siap untuk meningkatkan kesuksesan Anda? </h1>
+        <h2 className='text-center text-primary px-6 text-4xl font-bold'>Siap untuk meningkatkan kesuksesan Anda? </h2>
         <div className='my-5 flex flex-wrap justify-center'>
           <UnstyledLink to='/about-us/contact-us'>
             <Button

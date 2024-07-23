@@ -61,7 +61,7 @@ export default function ActualCareer() {
 
     return (
         <section className="container mx-auto w-full h-auto py-16 ">
-            <h5 className="text-center font-bold text-3xl mb-12 px-6">Apa Kata Mereka?</h5>
+            <h5 className="text-center font-bold text-2xl lg:text-5xl mb-12 px-6">Apa Kata Mereka?</h5>
             <Swiper
                 slidesPerView={1}
                 breakpoints={{
@@ -94,7 +94,7 @@ export default function ActualCareer() {
                                     )}
                                 </p>
                                 <div className="text-center mt-5">
-                                    <h4 className="text-primary-500">{item.name}</h4>
+                                    <h5 className="text-primary-500">{item.name}</h5>
                                     <h5>{item.jobTitle}</h5>
                                 </div>
                             </div>
@@ -104,7 +104,7 @@ export default function ActualCareer() {
             </Swiper>
             {selectedTestimonial && (
                 <Modal onClose={closeModal}>
-                    <h2 className="text-xl mb-4">{selectedName}</h2>
+                    <h6 className="text-xl mb-4">{selectedName}</h6>
                     <p className="mb-4">{selectedTestimonial}</p>
                 </Modal>
             )}

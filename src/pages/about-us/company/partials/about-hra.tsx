@@ -34,7 +34,7 @@ export default function HRACademy() {
             />
           </div>
           <div className="text-black px-6 md:px-10">
-            <h5 className="font-bold">Program LSP kami mengacu pada SKKNI sebagai berikut:</h5>
+            <h2 className="font-bold">Program LSP kami mengacu pada SKKNI sebagai berikut:</h2>
             <ul className="list-disc pl-10">
               <li>SKKNI 149 tahun. 2020 (HRM)</li>
               <li>SKKNI 55 tahun. 2009 (Tour Guide)</li>

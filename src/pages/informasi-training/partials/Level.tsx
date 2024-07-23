@@ -26,14 +26,14 @@ export default function Level() {
             <Jumbotron imageName='job-search.png'>
                 <section className="mx-auto max-w-screen-xl pb-20 mt-14">
                     <div className="pt-20 ">
-                        <h3 className='text-3xl font-bold'>
+                        <h5 className='text-3xl font-bold'>
                             Program Sertifikasi HR di HR Academy
-                        </h3>
+                        </h5>
                     </div>
                     <div className="mt-8">
                         {sections.map((section, index) => (
                             <div className='mt-6' key={index}>
-                                <h4 className=' text-xl font-normal'>{section.title}</h4>
+                                <h6 className=' text-xl font-normal'>{section.title}</h6>
                                 <p className='mt-2 text-lg leading-8 font-bold'>{section.text}</p>
                             </div>
                         ))}

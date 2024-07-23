@@ -51,14 +51,14 @@ export default function ProgramKewajiban() {
       <section className="bg-gray-100">
         <div className="mx-auto max-w-screen-xl content-center pb-20">
           <div className="flex flex-wrap justify-evenly items-center gap-5">
-          <h3 className='pt-20 text-primary font-bold text-3xl text-start'>
+          <h2 className='pt-20 px-11 text-primary font-bold text-2xl md:text-5xl text-center'>
           Program Sertifikasi HR di HR Academy
-        </h3>
+        </h2>
             {sections.slice(0, 2).map((section, index) => (
               <div className='pl-11 pr-11 mt-8' key={index}>
-                <h4 className='text-primary text-xl font-normal'>{section.title}</h4>
-                <p className='text-lg leading-8'>{section.text}</p>
-                <ul className="list-disc ml-12 text-lg leading-8">
+                <h4 className='text-primary text-lg md:text-xl font-normal'>{section.title}</h4>
+                <p className='text-md md:text-[20px] mt-5 leading-7 md:leading-10'>{section.text}</p>
+                <ul className="list-disc ml-10 text-md leading-7 md:text-lg md:leading-8">
                   {section.list.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
@@ -69,7 +69,7 @@ export default function ProgramKewajiban() {
               <div className='pl-11 pr-11 mt-8' key={index + 2}>
                 <h4 className='text-primary font-normal'>{section.title}</h4>
                 <p className='text-lg leading-8'>{section.text}</p>
-                <ul className="list-disc ml-12 text-lg leading-8">
+                <ul className="list-disc ml-10 text-lg leading-8">
                   {section.list.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
