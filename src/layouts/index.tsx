@@ -5,6 +5,7 @@ import { defaultSEOConfig } from 'configs/seo'
 import Footer from './footer'
 import Navigation from './navigation'
 import Breadcrumb from './Breadcrumb'
+import FloatingWhatsapp from './FloatingWhatsapp'
 
 const AppLayout: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const AppLayout: React.FC = () => {
         urlCanonical="https://www.hracademy.id"
         {...defaultSEOConfig}
       />
+      <FloatingWhatsapp />
       <Navigation />
       <Breadcrumb
         homeElement='Home'
