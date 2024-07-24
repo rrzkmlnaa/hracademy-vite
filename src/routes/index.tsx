@@ -3,7 +3,6 @@ import { createBrowserRouter } from 'react-router-dom'
 import AppLayout from 'layouts'
 
 const Home = lazy(() => import('pages/home'))
-const DetailArticle = lazy(() => import('pages/article/detail'))
 const PrivacyPolicy = lazy(() => import('pages/legal/privacyPolicy'))
 const TermOfService = lazy(() => import('pages/legal/termOfService'))
 const SuccessStory = lazy(() => import('pages/success-story/index'))
@@ -39,14 +38,6 @@ export const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading />}>
             <Home />
-          </Suspense>
-        )
-      },
-      {
-        path: '/articles/:slug',
-        element: (
-          <Suspense fallback={<Loading />}>
-            <DetailArticle />
           </Suspense>
         )
       },

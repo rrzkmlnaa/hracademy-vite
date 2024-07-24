@@ -2,7 +2,7 @@ import UnstyledLink from 'components/links/UnstyledLink';
 
 interface RoleTypes {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   bgColor: string;
   titleStyle: string;
   roles: {

@@ -64,11 +64,13 @@ export default function Index() {
       <Benefit />
 
       <Role 
-        title="Untuk Siapa HR Academy Hadir? " 
+        title="Untuk Siapa HR Academy Hadir?" 
+        subtitle="Temukan program dan sertifikasi yang sesuai dengan kebutuhan Anda" 
         bgColor="bg-gray-50" 
         titleStyle="text-xl font-bold" 
         roles={roles} 
       />
+
 
 
       <Testimonial />

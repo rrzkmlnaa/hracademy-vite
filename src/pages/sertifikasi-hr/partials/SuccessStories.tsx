@@ -2,14 +2,22 @@
 
 import { useState } from "react";
 import { ImQuotesLeft } from "react-icons/im";
-import { Mousewheel, Navigation } from 'swiper/modules';
+import { Mousewheel } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import Modal from 'components/modals/Modal';
 
+interface TestimonialType {
+  testimonial: string;
+  name: string;
+  jobTitle: string;
+  imageUrl: string;
+  companyLogoUrl: string;
+}
+
 export default function Success() {
-    const Success = [
+    const Success: TestimonialType[] = [
         {
             testimonial: "Wonsulting really tailored my resume and highlighted my strengths. They added a lot of metrics and facts into my resume and made my achievements sound more substantial. I was offered many interviews at large corporations and eventually landed a job at Yelp!",
             name: "Jonathan Budning",
@@ -47,28 +55,19 @@ export default function Success() {
         },
     ];
 
-    const [selectedTestimonial, setSelectedTestimonial] = useState(null);
-    const [selectedName, setSelectedName] = useState(null);
+    const [selectedTestimonial, setSelectedTestimonial] = useState<TestimonialType | null>(null);
 
-    const handleReadMore = (testimonial, name) => {
-        const selected = Success.find(item => item.name === name);
-        if (selected) {
-            setSelectedTestimonial(selected);
-            setSelectedName(name);
-        }
+    const handleReadMore = (testimonial: TestimonialType) => {
+        setSelectedTestimonial(testimonial);
     };
 
     const closeModal = () => {
         setSelectedTestimonial(null);
-        setSelectedName(null);
     };
 
-    const truncateText = (text, wordLimit) => {
+    const truncateText = (text: string, wordLimit: number) => {
         const words = text.split(' ');
-        if (words.length > wordLimit) {
-            return words.slice(0, wordLimit).join(' ') + '...';
-        }
-        return text;
+        return words.length > wordLimit ? `${words.slice(0, wordLimit).join(' ')}...` : text;
     };
 
     return (
@@ -76,17 +75,11 @@ export default function Success() {
             <Swiper
                 slidesPerView={1}
                 breakpoints={{
-                    576: {
-                        slidesPerView: 2,
-                    },
-                    768: {
-                        slidesPerView: 3,
-                    },
+                    576: { slidesPerView: 2 },
+                    768: { slidesPerView: 3 },
                 }}
                 spaceBetween={20}
-                mousewheel={{
-                    forceToAxis: true,
-                }}
+                mousewheel={{ forceToAxis: true }}
                 modules={[Mousewheel]}
                 className="mySwiper mt-8"
             >
@@ -94,7 +87,7 @@ export default function Success() {
                     <SwiperSlide key={index}>
                         <div className="p-6 mx-auto max-w-sm">
                             <div className="flex items-center justify-center mb-4 relative">
-                                <ImQuotesLeft size={22} className="text-primary absolute left-16 -top-0" />
+                                <ImQuotesLeft size={22} className="text-primary absolute left-0 -top-2" />
                                 <img
                                     src={item.imageUrl}
                                     alt={item.name}
@@ -103,9 +96,12 @@ export default function Success() {
                                     className="w-16 h-16 rounded-full object-cover"
                                 />
                             </div>
-                            <p className="text-sm text-center text-gray-700 leading-relaxed mb-2">{truncateText(item.testimonial, 25)}{' '}
+                            <p className="text-sm text-center text-gray-700 leading-relaxed mb-2">
+                                {truncateText(item.testimonial, 25)}{' '}
                                 {item.testimonial.split(' ').length > 25 && (
-                                    <button onClick={() => handleReadMore(item.testimonial, item.name)} className="text-primary underline">Selengkapnya</button>
+                                    <button onClick={() => handleReadMore(item)} className="text-primary underline">
+                                        Selengkapnya
+                                    </button>
                                 )}
                             </p>
                             <div className="text-center">
@@ -137,7 +133,7 @@ export default function Success() {
                                 className="w-16 h-16 rounded-full object-cover"
                             />
                         </div>
-                        <h6 className="text-xl text-center mb-4">{selectedName}</h6>
+                        <h6 className="text-xl text-center mb-4">{selectedTestimonial.name}</h6>
                         <p className="mb-4 text-center">{selectedTestimonial.testimonial}</p>
                     </div>
                 </Modal>

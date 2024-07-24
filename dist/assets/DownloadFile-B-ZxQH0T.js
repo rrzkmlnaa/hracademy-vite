@@ -1,0 +1,1 @@
+const d=(n,t)=>{fetch(n).then(e=>e.blob()).then(e=>{const c=URL.createObjectURL(e),o=document.createElement("a");o.href=c,o.download=t,document.body.appendChild(o),o.click(),window.URL.revokeObjectURL(c)}).catch(e=>console.error("Error downloading file:",e))};export{d};

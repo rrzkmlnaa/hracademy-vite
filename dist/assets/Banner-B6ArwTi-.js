@@ -1,0 +1,1 @@
+import{j as n}from"./index-Dn9HgVtz.js";function r({colorstyle:e,children:s}){return n.jsx("section",{className:`${e}`,children:n.jsx("div",{className:"container mx-auto max-w-screen-xl min-h96 content-center py-16",children:s})})}export{r as B};

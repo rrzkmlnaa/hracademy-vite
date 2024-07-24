@@ -1,10 +1,17 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, MouseEvent } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { GrLanguage, GrSearch } from "react-icons/gr";
 import { navigations } from 'constant/navigations';
 import { classNames } from 'utils';
 
-const Dropdown = ({ name, children, path }) => {
+// Definisikan tipe untuk props Dropdown
+interface DropdownProps {
+  name: string;
+  children?: { name: string; path?: string; children?: { name: string; path?: string }[] }[];
+  path?: string;
+}
+
+const Dropdown: React.FC<DropdownProps> = ({ name, children, path }) => {
   return (
     <div className="group inline-block dropdown">
       <Link
@@ -67,22 +74,26 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scroll, setScroll] = useState(false);
   const location = useLocation();
+  const drawerRef = useRef<HTMLDivElement | null>(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    const handleScroll = () => {
       setScroll(window.scrollY > 10);
-    });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
-  const drawerRef = useRef(null);
-
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (drawerRef.current && !drawerRef.current.contains(event.target)) {
+    const handleClickOutside: EventListener = (event) => {
+      if (drawerRef.current && !drawerRef.current.contains(event.target as Node)) {
         setIsMenuOpen(true);
       }
     };
@@ -100,7 +111,7 @@ const Navigation = () => {
   const isAboutUsPage = location.pathname.startsWith('/informasi-training');
 
   return (
-    <header className={classNames('bg-white py-3', scroll ? 'sticky-navbar shadow z-50' : null)}>
+    <header className={classNames('bg-white py-3', scroll ? 'sticky-navbar shadow z-50' : '')}>
       <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-4 px-4 sm:px-6 lg:px-8">
         <button onClick={toggleMenu} type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-expanded={isMenuOpen}>
           <span className="sr-only">Open main menu</span>

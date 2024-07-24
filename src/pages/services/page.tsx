@@ -28,7 +28,7 @@ export default function Page() {
                     <h1 className="text-center text-primary-500 capitalize pb-5">Our HR Services </h1>
                     <div className="flex flex-wrap justify-center items-center gap-10 py-5 px-6 xl:px-0 ">
                         {data.map((item, index) => (
-                            <UnstyledLink key={index} href={`${item.linkUrl}`} className="relative">
+                            <UnstyledLink key={index} to ={`${item.linkUrl}`} className="relative">
                                 <img
                                     src={item.imageUrl}
                                     width={350}
