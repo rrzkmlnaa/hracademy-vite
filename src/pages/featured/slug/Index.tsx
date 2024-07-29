@@ -10,6 +10,7 @@ import UnderlineLink from 'components/links/UnderlineLink';
 import UnstyledLink from 'components/links/UnstyledLink';
 import { FeaturedData } from 'constant/index';
 
+// Properti untuk FeaturedItem
 interface FeaturedItemProps {
   title: string;
   imageUrl: string;
@@ -18,12 +19,14 @@ interface FeaturedItemProps {
   slug: string;
 }
 
+// Properti untuk komponen Featured
 interface StyledCustomProps {
   head: string;
   headColor: string;
   sectionStyled: string;
 }
 
+// Komponen untuk menampilkan item featured
 const FeaturedItem = ({ title, imageUrl, alt, children, slug }: FeaturedItemProps) => {
   return (
     <div className='flex flex-col p-3 gap-3'>
@@ -31,18 +34,20 @@ const FeaturedItem = ({ title, imageUrl, alt, children, slug }: FeaturedItemProp
         src={imageUrl}
         alt={alt}
         className='w-full h-auto object-cover rounded-md'
+        loading="lazy" // Pemuatan lazy
       />
       <div className="w-full h-auto">
-        <h4 className={`text-primary text-lg font-semibold mb-2`}>{title}</h4>
+        <h4 className='text-primary text-lg font-semibold mb-2'>{title}</h4>
         <p className="text-base">{children}</p>
       </div>
       <div className='text-start mt-2'>
-        <UnderlineLink to ={`/featured/${slug}`}>Read more</UnderlineLink>
+        <UnderlineLink to={`/featured/${slug}`}>Read more</UnderlineLink>
       </div>
     </div>
   );
 };
 
+// Komponen utama untuk menampilkan daftar featured items
 export default function Featured({ head, headColor, sectionStyled }: StyledCustomProps) {
   return (
     <section className={`${sectionStyled}`}>
@@ -77,7 +82,7 @@ export default function Featured({ head, headColor, sectionStyled }: StyledCusto
           ))}
         </Swiper>
       </div>
-      <UnstyledLink to ='/featured' className="w-full flex justify-center items-center pb-10">
+      <UnstyledLink to='/featured' className="w-full flex justify-center items-center pb-10">
         <Button variant='yellow' className='px-10'>
           View More
         </Button>

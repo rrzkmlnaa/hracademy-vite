@@ -17,7 +17,7 @@ const Footer = () => {
                 <img
                   src="/images/appLogo.webp"
                   width="160px"
-                  height="auto"
+                  height="40px"
                   alt="app-logo"
                 />
               </Link>

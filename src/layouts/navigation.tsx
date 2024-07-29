@@ -121,7 +121,7 @@ const Navigation = () => {
         </button>
         <Link to="/" className="block text-teal-600">
           <span className="sr-only">Home</span>
-          <img src="/images/appLogo.webp" width="160px" height="auto" alt="app-logo" />
+          <img src="/images/appLogo.webp" width="160" height="40" alt="app-logo" /> {/* Tentukan width dan height */}
         </Link>
 
         <div ref={drawerRef} className={`w-full md:block md:w-auto md:static fixed z-10 inset-0 top-[73px] transform ease-in-out transition-all ${isMenuOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
@@ -134,7 +134,7 @@ const Navigation = () => {
           </ul>
         </div>
 
-        <div className=" md:flex items-center flex gap-5 ml-auto">
+        <div className=" md:hidden items-center hidden gap-5 ml-auto">
           <GrLanguage className="text-2xl cursor-pointer " />
           <GrSearch className="text-2xl cursor-pointer " />
         </div>
@@ -143,7 +143,7 @@ const Navigation = () => {
         {isAboutUsPage && (
           <Link to="/about-us" className="block text-teal-600 md:hidden">
             <span className="sr-only">Home</span>
-            <img src="/images/LPK.webp" width="160px" height="auto" alt="LPK-logo" />
+            <img src="/images/LPK.webp" width="160px" height="40px" alt="LPK-logo" /> {/* Tentukan width dan height */}
           </Link>
         )}
       </div>
