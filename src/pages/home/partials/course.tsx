@@ -7,51 +7,27 @@ import { Link } from 'react-router-dom'
 export default function Course() {
   const courses = [
     {
+      title: 'Staff HR',
+      imageUrl: '/images/SH.jpg',
+      price: 'Rp. 2.700.000',
+      link: '#'
+    },
+    {
       title: 'Certified Human Resources Supervisor HR Academy',
-      imageUrl: '/images/CHRS.webp',
+      imageUrl: '/images/chrs.jpg',
       price: 'Rp. 5.500.000',
       link: '#'
     },
     {
-      title: 'Senior Professional Human Resource HR Academy',
-      imageUrl: '/images/SPHR.webp',
-      price: 'Rp. 6.500.000',
-      link: '#'
-    },
-    {
       title: 'Certified Human Resource Professional HR Academy',
-      imageUrl: '/images/CHRP.webp',
+      imageUrl: '/images/chrp.jpg',
       price: 'Rp. 7.500.000',
       link: '#'
     },
     {
       title: 'Certified Human Capital General Manager HR Academy',
-      imageUrl: '/images/CHCGM.webp',
-      price: 'Rp. 9.500.000',
-      link: '#'
-    },
-    {
-      title: 'Staff HR',
-      imageUrl: '/images/staff-hr.webp',
-      price: 'Rp. 4.500.000',
-      link: '#'
-    },
-    {
-      title: 'Supervisor HR',
-      imageUrl: '/images/supervisor-hr.webp',
-      price: 'Rp. 5.500.000',
-      link: '#'
-    },
-    {
-      title: 'Assisten Manager HR',
-      imageUrl: '/images/assisten-manager-hr.webp',
-      price: 'Rp. 6.500.000',
-      link: '#'
-    },
-    {
-      title: 'Manager HR',
-      imageUrl: '/images/manager-hr.webp',
-      price: 'Rp. 7.500.000',
+      imageUrl: '/images/chcgm.jpg',
+      price: 'Rp. 12.000.000',
       link: '#'
     }
   ]

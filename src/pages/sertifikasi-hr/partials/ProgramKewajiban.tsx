@@ -67,7 +67,7 @@ export default function ProgramKewajiban() {
         Menjalin KerJasama Pengusaha dan Pekerja,
         Mengevaluasi Pelaksanaan Program Pembelajaran dan Pengembangan,
         Memfasilitasi Pengelolaan Kepuasan dan Keterlekatan Pekerja,
-Melakukan Konsultasi Karir.`,
+        Melakukan Konsultasi Karir.`,
       list: [
         'Sertifikat General Manager SDM/General Manager HR BNSP (KKNI Level 7)',
         'Sertifikat Certified Human Capital General Manager (CHCGM) dari HR Academy',
