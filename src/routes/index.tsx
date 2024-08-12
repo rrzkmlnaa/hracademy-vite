@@ -25,6 +25,11 @@ const SertifikasiHR = lazy (() => import('pages/sertifikasi-hr/index'))
 const ResourceFrom = lazy (() => import('pages/resources/slug/page'))
 const Artikel = lazy (() => import('pages/featured/slug/page'))
 const Featured = lazy (() => import('pages/featured/index'))
+const Staff = lazy (() => import('pages/classDetails/staff-hr/index'))
+const Chrs = lazy (() => import('pages/classDetails/chrs/index'))
+const Chrp = lazy (() => import('pages/classDetails/chrp/index'))
+const Chcgm = lazy (() => import('pages/classDetails/chcgm/index'))
+// import Staff = lazy (() => import('pages/classDetails/staff-hr/index'))
 
 const Loading = () => <div>Loading...</div>
 
@@ -206,6 +211,38 @@ export const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading />}>
             <Featured />
+          </Suspense>
+        )
+      },
+      {
+        path: '/classDetails/staff-hr',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Staff />
+          </Suspense>
+        )
+      },
+      {
+        path: '/classDetails/chrs',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Chrs />
+          </Suspense>
+        )
+      },
+      {
+        path: '/classDetails/chrp',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Chrp />
+          </Suspense>
+        )
+      },
+      {
+        path: '/classDetails/chcgm',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Chcgm />
           </Suspense>
         )
       },

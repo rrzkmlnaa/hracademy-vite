@@ -10,25 +10,25 @@ export default function Course() {
       title: 'Staff HR',
       imageUrl: '/images/SH.jpg',
       price: 'Rp. 2.700.000',
-      link: '#'
+      link: '/classDetails/staff-hr'
     },
     {
       title: 'Certified Human Resources Supervisor HR Academy',
       imageUrl: '/images/chrs.jpg',
       price: 'Rp. 5.500.000',
-      link: '#'
+      link: '/classDetails/chrs'
     },
     {
       title: 'Certified Human Resource Professional HR Academy',
       imageUrl: '/images/chrp.jpg',
       price: 'Rp. 7.500.000',
-      link: '#'
+      link: '/classDetails/chrp'
     },
     {
       title: 'Certified Human Capital General Manager HR Academy',
       imageUrl: '/images/chcgm.jpg',
       price: 'Rp. 12.000.000',
-      link: '#'
+      link: '/classDetails/chcgm'
     }
   ]
 
@@ -109,14 +109,6 @@ export default function Course() {
                   <p>Harga</p>
                   <span className="font-bold">{course.price}</span>
                 </div>
-                {/* <Button
-                  isLoading={false}
-                  variant='primary'
-                  size='base'
-                  className='w-full uppercase flex justify-center border-none'
-                >
-                  lihat detail
-                </Button> */}
               </div>
             </div>
           </SwiperSlide>
