@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Jumbotron from '../../../components/jumbo/jumbot';
+import Jumbotron from '../../../components/jumbo/Jumbotron';
 import Button from '../../../components/Button';
 import UnstyledLink from '../../../components/links/UnstyledLink'
 

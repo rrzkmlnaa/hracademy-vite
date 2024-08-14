@@ -29,6 +29,7 @@ const Staff = lazy (() => import('pages/classDetails/staff-hr/index'))
 const Chrs = lazy (() => import('pages/classDetails/chrs/index'))
 const Chrp = lazy (() => import('pages/classDetails/chrp/index'))
 const Chcgm = lazy (() => import('pages/classDetails/chcgm/index'))
+const SertifikasiCHRP = lazy (() => import('pages/sertifikasi-chrp/index'))
 // import Staff = lazy (() => import('pages/classDetails/staff-hr/index'))
 
 const Loading = () => <div>Loading...</div>
@@ -243,6 +244,14 @@ export const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading />}>
             <Chcgm />
+          </Suspense>
+        )
+      },
+      {
+        path: '/pages/sertifikasi-chrp',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <SertifikasiCHRP />
           </Suspense>
         )
       },

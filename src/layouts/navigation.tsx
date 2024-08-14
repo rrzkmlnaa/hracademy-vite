@@ -108,7 +108,7 @@ const Navigation = () => {
   }, [isMenuOpen]);
 
   // Fungsi untuk mengecek apakah kita berada di halaman "About Us"
-  const isAboutUsPage = location.pathname.startsWith('/informasi-training');
+  const isAboutUsPage = location.pathname.startsWith('/pages/sertifikasi-chrp');
 
   return (
     <header className={classNames('bg-white py-3', scroll ? 'sticky-navbar shadow z-50' : '')}>
@@ -141,9 +141,10 @@ const Navigation = () => {
         
         {/* Tampilkan logo "LPK" hanya di halaman "About Us" pada versi mobile */}
         {isAboutUsPage && (
-          <Link to="/about-us" className="block text-teal-600 md:hidden">
+          <Link to="/about-us" className="flex text-teal-600 md:hidden">
             <span className="sr-only">Home</span>
-            <img src="/images/LPK.webp" width="160px" height="40px" alt="LPK-logo" /> {/* Tentukan width dan height */}
+            <img src="/images/LPK.webp" width="90px" height="40px" alt="LPK-logo" /> {/* Tentukan width dan height */}
+            <img src="/images/BNSP.webp" width="70px" height="40px" alt="BNSP-logo" /> 
           </Link>
         )}
       </div>

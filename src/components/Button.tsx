@@ -6,7 +6,7 @@ export type ButtonProps = {
   text: string
   type: 'button' | 'submit' | 'link'
   to?: string
-  color?: 'primary' | 'warning' | 'error' | 'black' | 'white'
+  color?: 'primary' | 'warning' | 'error' | 'black' | 'white' | 'teal'
   rounded?: boolean
   action?: () => void
 }
@@ -34,11 +34,15 @@ const colorObj = {
   },
   white: {
     background: 'bg-[#ffffff]',
-    foreground: 'text-[#000000]', // Biasanya foreground putih adalah hitam atau warna gelap agar teks tetap terbaca
-    active: 'active:bg-[#f0f0f0]' // Pilihan warna saat aktif, bisa disesuaikan
+    foreground: 'text-[#000000]',
+    active: 'active:bg-[#f0f0f0]'
+  },
+  teal: {
+    background: 'bg-[#6ee7b7]',
+    foreground: 'text-[#0c4a6e]', // Warna teks disesuaikan agar kontras
+    active: 'active:bg-[#4fd1c5]' // Warna saat aktif, disesuaikan untuk teal
   }
-};
-
+}
 
 const Button = ({
   text,
