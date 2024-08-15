@@ -13,7 +13,7 @@ const schedules = [
 export default function Join() {
   return (
     <>
-      <Jumbotron imageName="linkedin-rev.png">
+      <Jumbotron imageName="background2.jpeg">
         <div className="text-center md:text-start">
           <h5 className="text-3xl mb-10 font-bold">Upcoming Schedule</h5>
         </div>

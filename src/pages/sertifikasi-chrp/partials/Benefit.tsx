@@ -48,14 +48,14 @@ export const services = [
       "35.5% dari HR Manager dan 51.1% dari VP HR memiliki sertifikasi, menunjukkan bahwa sertifikasi dapat membantu dalam mencapai posisi yang lebih tinggi",
   },
   {
-    title: "Peluang Karier yang Lebih Baik",
+    title: "Keahlian yang Diakui:",
     description:
-      "Siapkan diri untuk sukses dengan coaching wawancara kami. Dapatkan kepercayaan diri dan asah keterampilan Anda.",
+      "Sertifikasi HR menunjukkan bahwa Anda memiliki pengetahuan dan keterampilan yang diakui secara profesional.",
   },
   {
-    title: "Jaringan Profesional Yang Terpercaya",
+    title: "Efisiensi Proses Bisnis HRM: ",
     description:
-      "Kami akan menerjemahkan pengalaman kerja relevan Anda untuk membuat surat lamaran kerja yang sempurna dan meningkatkan peluang Anda.",
+      "HR yang bersertifikasi cenderung lebih efisien dalam proses rekrutmen, meningkatkan produktivitas dan retensi, dan up-to-date dengan praktik HR terbaru.",
   },
 ];
 
@@ -64,7 +64,7 @@ export default function Career() {
   const additionalServices = services.slice(2, 4);
 
   return (
-    <Jumbotron imageName="banner-aboutus.webp">
+    <Jumbotron imageName="background3.jpeg">
       <section id="career" className="text-white">
         <div className="mx-auto max-w-screen-xl pt-24 pb-16 md:py-40 text-left">
           <div className="mb-8 md:px-8">

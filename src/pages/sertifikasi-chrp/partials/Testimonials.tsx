@@ -78,15 +78,12 @@ const Modul = () => {
   };
 
   return (
-      <Jumbotron imageName="job-search.png">
+      <Jumbotron imageName="background3.jpeg">
         <div className="p-6">
           <div className="text-right mb-6">
-            <h1 className="text-3xl font-bold" style={{ color: "#bfdbfe" }}>
-              Modul Pelatihan
+            <h1 className="text-6xl font-bold" style={{ color: "#bfdbfe" }}>
+              Apa kata alumni?
             </h1>
-            <p className="text-lg">
-              SKKNI No. 149 Tahun 2020 untuk bidang HR + Materi eksklusif HR Academy berdasarkan standar degree global
-            </p>
           </div>
         </div>
       <div className="p-6">

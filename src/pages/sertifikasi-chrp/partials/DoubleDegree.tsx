@@ -3,7 +3,7 @@ import Jumbotron from "../../../components/Jumbotron";
 
 export default function Comp2() {
   return (
-    <Jumbotron imageName="banner-landingpage.webp">
+    <Jumbotron imageName="background2.jpeg">
       <h5 className="capitalize text-start text-4xl md:text-5xl lg:text-6xl font-normal p-5 overflow-wrap break-word">
         <span className="font-bold text-5xl md:text-5xl">
           {" "}

@@ -15,7 +15,7 @@ const data: SolutionType[] = [
 
 export default function Kemudahan() {
     return (
-        <Jumbotron imageName='training-sertif-banner.webp'>
+        <Jumbotron imageName='background3.jpeg'>
             <section id="Kemudahan" className="relative">
                 <div className="mx-auto min-h-96 max-w-screen-sm content-center px-10 pb-16 pt-24 md:max-w-screen-xl md:px-0 relative z-10">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-5 md:gap-0 md:px-10">

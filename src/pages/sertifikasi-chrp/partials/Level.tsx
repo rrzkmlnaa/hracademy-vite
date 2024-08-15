@@ -23,7 +23,7 @@ export default function Level() {
         <div className="flex items-center">
           <FaCheckCircle className="text-primary text-3xl mr-4" />
           <div className="flex-1">
-            <span className="font-bold">Biaya Terjangkau</span>
+            <span className="font-extrabold ">Biaya Terjangkau</span>
             <br />
             Dibandingkan dengan lembaga lainnya, kami menawarkan harga yang
             lebih kompetitif dengan nilai yang jauh lebih tinggi dari investasi
@@ -37,7 +37,7 @@ export default function Level() {
         <div className="flex items-center">
           <FaCheckCircle className="text-primary text-3xl mr-4" />
           <div className="flex-1">
-            <span className="font-bold">Sertifikasi Ganda </span>
+            <span className="font-extrabold">Sertifikasi Ganda </span>
             <br />
             Peserta menerima sertifikasi BNSP (Badan Nasional Sertifikasi
             Profesi) dan kredensial SDM CHRP yang memvalidasi keahlian di
@@ -51,7 +51,7 @@ export default function Level() {
         <div className="flex items-center">
           <FaCheckCircle className="text-primary text-3xl mr-4" />
           <div className="flex-1">
-            <span className="font-bold text-[16px]">Mentor Expert</span>
+            <span className="font-extrabold text-[16px]">Mentor Expert</span>
             <br /> Selain berpengalaman, mentor kami terampil dalam menyampaikan
             materi dengan cara yang mudah dipahami bagi setiap peserta
           </div>
@@ -63,7 +63,7 @@ export default function Level() {
         <div className="flex items-center">
           <FaCheckCircle className="text-primary text-3xl mr-4" />
           <div className="flex-1">
-            <span className="font-bold text-[16px]">
+            <span className="font-extrabold text-[16px]">
               {" "}
               Template, Tools HR, dan HRIS{" "}
             </span>
@@ -80,7 +80,7 @@ export default function Level() {
         <div className="flex items-center">
           <FaCheckCircle className="text-primary text-3xl mr-4" />
           <div className="flex-1">
-            <span className="font-bold text-[16px]">Jaringan HR</span>
+            <span className="font-extrabold text-[16px]">Jaringan HR</span>
             <br />
             Dengan komunitas alumni, banyak informasi eksklusif yang tersedia
             komunikasi dengan mentor, ongoing support, pembaruan ilmu, hingga
@@ -93,7 +93,7 @@ export default function Level() {
 
   return (
     <>
-      <Jumbotron imageName="job-search.png">
+      <Jumbotron imageName="background3.jpeg">
         <section className="mx-auto max-w-screen-xl pb-20 mt-14">
           <div className="pt-20">
             <h5 className="text-3xl font-bold text-center">

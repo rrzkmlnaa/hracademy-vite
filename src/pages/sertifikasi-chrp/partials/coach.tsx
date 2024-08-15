@@ -11,7 +11,7 @@ export default function Coach() {
   ];
 
   return (
-    <div className="relative bg-[url(/images/training-sertif-banner.webp)] bg-cover bg-center">
+    <div className="relative bg-[url(/images/background2.jpeg)] bg-cover bg-center">
       <section className="flex flex-col h-full relative">
         <div className="flex-1 flex items-start justify-end p-4 text-right bg-opacity-75">
           <div>

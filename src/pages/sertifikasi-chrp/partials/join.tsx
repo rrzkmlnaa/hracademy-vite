@@ -42,17 +42,17 @@ export default function Join() {
 
   return (
     <>
-      <Jumbotron imageName="linkedin-rev.png">
+      <Jumbotron imageName="background2.jpeg">
         <div className="text-center md:text-start">
           <h5 className="text-xl font-light">
             Pendaftaran CHRP <br />
-            Batch 37 (Offline) <span className="font-bold"> ditutup</span>{" "}
+            Batch 27 (Offline) <span className="font-bold"> ditutup</span>{" "}
             tanggal 18 Agustus 2024
           </h5>
         </div>
 
         <div className="flex items-center justify-center mt-6">
-          <div className="bg-zinc-400 shadow-lg rounded-lg p-6 max-w-sm w-full">
+          <div className="bg-[#94a3b8] shadow-lg rounded-lg p-6 max-w-sm w-full">
             <div className="flex justify-between items-center mb-4">
               <div className="flex-1 flex flex-col items-center">
                 <p className="text-gray-700">Hari</p>
@@ -91,18 +91,19 @@ export default function Join() {
               }}
             ></span>
           </p>
-          <p className="text-white font-bold text-3xl">Rp. 6.999.000</p>
+          <p className="text-white font-bold text-xl">Early Bird Rp. 6.999.000</p>
+          <p className="text-white font-bold text-2xl">Min. 3 orang Rp. 6.499.000</p>
         </div>
 
-        <div className="text-center mt-6">
-          <Button
-            type="link"
-            to="https://api.whatsapp.com/send/?phone=6285942210587&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu+jelaskan+lebih+lanjut+mengenai+.....%3F&type=phone_number&app_absent=0"
-            color="teal"
-            text="DAFTARKAN SAYA"
-            rounded
-          />
-        </div>
+          {/* <div className="text-center mt-6">
+            <Button
+              type="link"
+              to="https://api.whatsapp.com/send/?phone=6285942210587&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu+jelaskan+lebih+lanjut+mengenai+.....%3F&type=phone_number&app_absent=0"
+              color="teal"
+              text="DAFTARKAN SAYA"
+              rounded
+            />
+          </div> */}
 
         <div className="text-center mt-4">
           <p className="text-white text-xl mt-5 mb-2">Mau respon lebih cepat?</p>

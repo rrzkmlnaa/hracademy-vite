@@ -29,7 +29,7 @@ const content = [
 
 export default function Modul() {
   return (
-    <Jumbotron imageName="job-search.png">
+    <Jumbotron imageName="background2.jpeg">
       <div className="p-6">
         <div className="text-right mb-6">
           <h1 className="text-3xl font-bold" style={{ color: "#bfdbfe" }}>Modul Pelatihan</h1>

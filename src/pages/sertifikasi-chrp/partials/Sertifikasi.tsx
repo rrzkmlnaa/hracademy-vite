@@ -2,7 +2,7 @@ import Jumbotron from "components/jumbo/jumbot";
 
 export default function Comp1() {
   return (
-    <Jumbotron imageName="career-coaching.png">
+    <Jumbotron imageName="background1.jpeg">
       <div className="">
         <h5 className="capitalize text-center text-[18px] md:text-6xl text-white font-sm p-5 overflow-wrap break-word">
           Sertifikasi Double Degree
@@ -12,7 +12,7 @@ export default function Comp1() {
           CHRP BNSP HR Manager
         </h6>
         <div className="w-11/12 h-[3px] rounded bg-[#FFFFFF] mx-auto my-2 "></div>
-        <p className="font-thin text-[14px] text-center">
+        <p className="font-extralight text-[20px] text-center">
           Memperperdalam kompetensi mengelola SDM organisasi dengan standar
           global
         </p>
