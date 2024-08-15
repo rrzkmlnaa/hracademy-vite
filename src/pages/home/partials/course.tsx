@@ -57,11 +57,11 @@ export default function Course() {
           />
         </div>
         <a href="#course">PROGRAM PELATIHAN DAN SERTIFIKASI</a>
-        <h6 className="p-5 text-4xl font-bold">
+        <h2 className="p-5 text-4xl font-bold">
           Tingkatkan Keterampilan Anda
           <br />
           Jadilah Pemimpin yang Dihormati
-        </h6>
+        </h2>
         <p className="">
           Program pelatihan oleh praktisi berpengalaman dan dilengkapi dengan
           sertifikasi berlisensi BNSP

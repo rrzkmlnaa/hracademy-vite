@@ -86,7 +86,7 @@ export default function ProgramKewajiban() {
         </h2>
             {sections.slice(0, 2).map((section, index) => (
               <div className='pl-11 pr-11 mt-8' key={index}>
-                <h4 className='text-primary text-lg md:text-xl font-normal'>{section.title}</h4>
+                <h3 className='text-primary text-lg md:text-xl font-normal'>{section.title}</h3>
                 <p className='text-md md:text-[20px] mt-5 leading-7 md:leading-10'>{section.text}</p>
                 <ul className="list-disc ml-10 text-md leading-7 md:text-lg md:leading-8">
                   {section.list.map((item, i) => (
@@ -97,7 +97,7 @@ export default function ProgramKewajiban() {
             ))}
             {showMore && sections.slice(2).map((section, index) => (
               <div className='pl-11 pr-11 mt-8' key={index + 2}>
-                <h4 className='text-primary text-lg md:text-xl font-normal'>{section.title}</h4>
+                <h3 className='text-primary text-lg md:text-xl font-normal'>{section.title}</h3>
                 <p className='text-md md:text-[20px] mt-5 leading-7 md:leading-10'>{section.text}</p>
                 <ul className="list-disc ml-10 text-lg leading-8">
                   {section.list.map((item, i) => (

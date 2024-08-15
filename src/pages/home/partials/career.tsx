@@ -108,7 +108,7 @@ export default function Career() {
           Career development
         </a>
         <div className="mb-8 px-6 md:px-8">
-          <p className="py-5 text-4xl font-bold">Butuh Peningkatan Karier?</p>
+          <h2 className="py-5 text-4xl font-bold">Butuh Peningkatan Karier?</h2>
           <p id="scrollLimitations" className="text-balance text-center">
             Sementara beberapa orang terlahir dengan koneksi industri, banyak
             dari kita yang tidak seberuntung itu. Izinkan kami memandu Anda

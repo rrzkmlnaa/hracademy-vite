@@ -51,11 +51,11 @@ export default function Featured({
   return (
     <section className={`${sectionStyled}`}>
       <div className="container mx-auto min-h-96 max-w-screen-xl content-center px-6 pt-6">
-        <p
+        <h2
           className={`py-5 ${headColor} px-3 text-center text-4xl font-bold md:text-start`}
         >
           {head}
-        </p>
+        </h2>
         <Swiper
           slidesPerView={1}
           breakpoints={{

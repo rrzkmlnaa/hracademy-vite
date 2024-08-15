@@ -26,11 +26,11 @@ export default function Solution() {
             <a href="#solution" className="uppercase text-gray-500">
               Solutions
             </a>
-            <p className="text-primary text-balance py-4 text-start text-4xl font-bold">
+            <h2 className="text-primary text-balance py-4 text-start text-4xl font-bold">
               Solusi Sumber Daya Manusia
               <br />
               untuk Era Digital
-            </p>
+            </h2>
             {data.map((item, index) => (
               <div
                 key={index}

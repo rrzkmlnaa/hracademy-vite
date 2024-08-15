@@ -20,7 +20,7 @@ export default function Coach() {
             CEO, PELATIH SENIOR
           </UnderlineLink>
           <h2 className='font-bold text-primary text-xl lg:text-3xl'>TEMUI PEMIMPIN KAMI</h2>
-          <h3 className='font-bold text-primary text-2xl'>SRI WULANDARI, EPC, S.IP, MBA.</h3>
+          <h2 className='font-bold text-primary text-2xl'>SRI WULANDARI, EPC, S.IP, MBA.</h2>
           <p className="text-justify">
             Coach Wulan, visioner di balik HR Academy, membawa
             lebih dari 25 tahun pengalaman yang luas sebagai pelatih,

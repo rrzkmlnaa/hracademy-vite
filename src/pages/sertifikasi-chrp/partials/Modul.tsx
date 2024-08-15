@@ -32,7 +32,7 @@ export default function Modul() {
     <Jumbotron imageName="job-search.png">
       <div className="p-6">
         <div className="text-right mb-6">
-          <h1 className="text-3xl font-bold">Modul Pelatihan</h1>
+          <h1 className="text-3xl font-bold" style={{ color: "#bfdbfe" }}>Modul Pelatihan</h1>
           <p className="text-lg">SKKNI No. 149 Tahun 2020 untuk bidang HR + Materi eksklusif HR Academy berdasarkan standar degree global</p>
         </div>
         <div className="text-left">

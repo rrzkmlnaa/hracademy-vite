@@ -21,8 +21,8 @@ export default function Coach() {
             >
               Diajar oleh Expert
             </h3>
-            <p className="text-[18px] mt-4">Praktisi Profesional</p>
-            <h5 className="text-[19px] font-bold">(Level HR Direktur)</h5>
+            <p className="text-[18px] text-white mt-4">Praktisi Profesional</p>
+            <h5 className="text-[19px] font-bold text-white">(Level HR Direktur)</h5>
           </div>
         </div>
 

@@ -2,9 +2,9 @@ export default function LMS() {
   return (
     <section className="bg-blue-200 py-10 md:px-6">
       <div className="text-primary mx-auto max-w-screen-xl content-center px-6 py-16 text-center md:px-0">
-        <p className="text-4xl font-bold">
+        <h2 className="text-4xl font-bold">
           Belajar Lebih Mudah dengan LMS HR Academy
-        </p>
+        </h2>
         <p className="py-5">
           Dapatkan akses mudah ke materi, pembayaran yang sederhana, dan fitur
           interaktif

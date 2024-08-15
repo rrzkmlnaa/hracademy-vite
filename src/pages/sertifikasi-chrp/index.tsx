@@ -5,7 +5,8 @@ import Coach from "./partials/coach";
 import Role from './partials/info'
 import Level from './partials/Level'
 import Modul from './partials/Modul'
-import Testimonial from './partials/testimoni'
+import Testimoni from './partials/testimoni'
+import Testimonial from './partials/Testimonials'
 import Program from './partials/Program'
 import Join from './partials/join'
 import Jadwal from './partials/Jadwal'
@@ -28,7 +29,9 @@ export default function Index() {
 
             <Modul />
 
-            <Testimonial />
+            <Testimonial/>
+
+            <Testimoni />
 
             <Program />
 
