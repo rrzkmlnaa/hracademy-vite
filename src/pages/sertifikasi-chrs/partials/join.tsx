@@ -4,12 +4,12 @@ import Button from "components/Button";
 import UnstyledLink from "components/links/UnstyledLink";
 
 export default function Join() {
-  const targetDate = new Date("2024-09-02T00:00:00Z"); // Target date (2 Sempember 2024)
+  const targetDate = new Date("2024-09-02T00:00:00Z"); // Target date (2 September 2024)
 
   const calculateRemainingTime = () => {
     const now = new Date();
     const timeDifference = targetDate.getTime() - now.getTime();
-    const seconds = Math.floor(timeDifference / 1000);
+    const seconds = Math.max(Math.floor(timeDifference / 1000), 0); // Ensure seconds are non-negative
     return seconds;
   };
 
@@ -21,6 +21,7 @@ export default function Join() {
       const remainingTime = calculateRemainingTime();
       if (remainingTime <= 0) {
         setIsActive(false);
+        setSeconds(0); // Ensure the seconds state is set to 0 when the countdown ends
         clearInterval(interval);
       } else {
         setSeconds(remainingTime);
@@ -94,15 +95,15 @@ export default function Join() {
           <p className="text-white font-bold text-xl">Early Bird Rp. 4.999.000</p>
         </div>
 
-          {/* <div className="text-center mt-6">
-            <Button
-              type="link"
-              to="https://api.whatsapp.com/send/?phone=6285942210587&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu+jelaskan+lebih+lanjut+mengenai+.....%3F&type=phone_number&app_absent=0"
-              color="teal"
-              text="DAFTARKAN SAYA"
-              rounded
-            />
-          </div> */}
+        {/* <div className="text-center mt-6">
+          <Button
+            type="link"
+            to="https://api.whatsapp.com/send/?phone=6285942210587&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu+jelaskan+lebih+lanjut+mengenai+.....%3F&type=phone_number&app_absent=0"
+            color="teal"
+            text="DAFTARKAN SAYA"
+            rounded
+          />
+        </div> */}
 
         <div className="text-center mt-4">
           <p className="text-white text-xl mt-5 mb-2">Mau respon lebih cepat?</p>

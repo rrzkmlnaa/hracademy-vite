@@ -4,7 +4,7 @@ import Button from "components/Button";
 import UnstyledLink from "components/links/UnstyledLink";
 
 export default function Join() {
-  const targetDate = new Date("2024-08-22T00:00:00Z"); // Target date (18 August 2024)
+  const targetDate = new Date("2024-08-22T00:00:00Z"); // Target date (8 Agustus 2024)
 
   const calculateRemainingTime = () => {
     const now = new Date();
@@ -21,6 +21,7 @@ export default function Join() {
       const remainingTime = calculateRemainingTime();
       if (remainingTime <= 0) {
         setIsActive(false);
+        setSeconds(0); // Set seconds to 0 when the countdown ends
         clearInterval(interval);
       } else {
         setSeconds(remainingTime);
@@ -45,8 +46,7 @@ export default function Join() {
       <Jumbotron imageName="background2.jpeg">
         <div className="text-center md:text-start">
           <h5 className="text-xl font-light">
-            Pendaftaran HR STAFF BNSP Batch 7 (Online) <span className="font-bold"> ditutup</span> tanggal 22
-            Agustus 2024
+            Pendaftaran HR STAFF BNSP Batch 7 (Online) <span className="font-bold"> ditutup</span> tanggal 22 Agustus 2024
           </h5>
         </div>
 
@@ -55,7 +55,7 @@ export default function Join() {
             <div className="flex justify-between items-center mb-4">
               <div className="flex-1 flex flex-col items-center">
                 <p className="text-gray-700">Hari</p>
-                <div className="bg-white w-[50px] h-[50px] justify-center items-center rounded-lg mt-1">
+                <div className="bg-white w-[50px] h-[50px] flex justify-center items-center rounded-lg mt-1">
                   <div className="text-3xl font-normal text-black text-center mt-2">
                     {totalDays}
                   </div>
@@ -63,7 +63,7 @@ export default function Join() {
               </div>
               <div className="flex-1 flex flex-col items-center">
                 <p className="text-gray-700">Jam</p>
-                <div className="bg-white w-[50px] h-[50px] justify-center items-center rounded-lg mt-1">
+                <div className="bg-white w-[50px] h-[50px] flex justify-center items-center rounded-lg mt-1">
                   <div className="text-3xl font-normal text-black text-center mt-2">
                     {totalHours}
                   </div>
@@ -71,7 +71,7 @@ export default function Join() {
               </div>
               <div className="flex-1 flex flex-col items-center">
                 <p className="text-gray-700">Menit</p>
-                <div className="bg-white w-[50px] h-[50px] justify-center items-center rounded-lg mt-1">
+                <div className="bg-white w-[50px] h-[50px] flex justify-center items-center rounded-lg mt-1">
                   <div className="text-3xl font-normal text-black text-center mt-2">
                     {totalMinutes}
                   </div>
