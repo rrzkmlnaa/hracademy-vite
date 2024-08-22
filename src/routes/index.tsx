@@ -52,6 +52,7 @@ const Chrs = lazy(() => import("pages/classDetails/chrs/index"));
 const Chrp = lazy(() => import("pages/classDetails/chrp/index"));
 const Chcgm = lazy(() => import("pages/classDetails/chcgm/index"));
 const SertifikasiCHRP = lazy(() => import("pages/sertifikasi-chrp/index"));
+const SertifikasiCHRS = lazy(() => import("pages/sertifikasi-chrs/index"));
 const SertifikasiStaff = lazy(() => import("pages/sertifikasi-staff/index"));
 // import Staff = lazy (() => import('pages/classDetails/staff-hr/index'))
 
@@ -275,6 +276,14 @@ export const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading />}>
             <SertifikasiCHRP />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/pages/sertifikasi-chrs",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <SertifikasiCHRS />
           </Suspense>
         ),
       },

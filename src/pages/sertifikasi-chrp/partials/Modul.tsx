@@ -35,9 +35,9 @@ export default function Modul() {
           <h1 className="text-3xl font-bold" style={{ color: "#bfdbfe" }}>Modul Pelatihan</h1>
           <p className="text-lg">SKKNI No. 149 Tahun 2020 untuk bidang HR + Materi eksklusif HR Academy berdasarkan standar degree global</p>
         </div>
-        <div className="text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left lg:mt-10">
           {content.map((item, index) => (
-            <p key={index} className="mb-2">
+            <p key={index} >
               {index + 1}. {item}
             </p>
           ))}

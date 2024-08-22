@@ -75,6 +75,10 @@ export const navigations: NavigationTypes[] = [
         path: '/pages/sertifikasi-chrp'
       },
       {
+        name: 'Sertifikasi CHRS',
+        path: '/pages/sertifikasi-chrs'
+      },
+      {
         name: 'Sertifikasi Staff',
         path: '/pages/sertifikasi-staff'
       }

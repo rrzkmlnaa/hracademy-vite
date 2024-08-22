@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Jumbotron from "components/jumbo/benner";
 import { FaUserCircle, FaStar, FaThumbsUp, FaEllipsisV } from "react-icons/fa";
 
-// Definisikan tipe untuk testimonial
 interface Testimonial {
   id: number;
   username: string;
@@ -16,7 +15,6 @@ interface Testimonial {
   guide?: string; // Menandakan guide lokal
 }
 
-// Array untuk konten testimonial
 const testimonials: Testimonial[] = [
   {
     id: 1,
@@ -78,17 +76,17 @@ const Modul = () => {
   };
 
   return (
-      <Jumbotron imageName="background3.jpeg">
-        <div className="p-6">
-          <div className="text-right mb-6">
-            <h1 className="text-6xl font-bold" style={{ color: "#bfdbfe" }}>
-              Apa kata alumni?
-            </h1>
-          </div>
-        </div>
+    <Jumbotron imageName="background3.jpeg">
       <div className="p-6">
+        <div className="text-right mb-6">
+          <h1 className="text-6xl font-bold" style={{ color: "#bfdbfe" }}>
+            Apa kata alumni?
+          </h1>
+        </div>
+      </div>
+      <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4 lg:ml-20 ">
         {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="bg-white shadow-lg rounded-lg p-6 w-full mb-4">
+          <div key={testimonial.id} className="bg-white shadow-lg rounded-lg p-6 mb-4">
             <div className="flex items-center justify-between">
               <FaUserCircle size={40} className="text-gray-400" />
               <div className="flex flex-col ml-4">
@@ -148,7 +146,7 @@ const Modul = () => {
           </div>
         ))}
       </div>
-      </Jumbotron>
+    </Jumbotron>
   );
 };
 

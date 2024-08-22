@@ -1,5 +1,5 @@
 import React from "react";
-import Jumbotron from "../../../components/Jumbotron";
+import Jumbotron from "../../../components/jumbo/Jumbotron";
 
 const schedules = [
   { type: "Online", date: "26 - 30 Agustus" },
@@ -14,7 +14,7 @@ export default function Join() {
   return (
     <>
       <Jumbotron imageName="background2.jpeg">
-        <div className="text-center md:text-start">
+        <div className="text-center md:text-center">
           <h5 className="text-3xl mb-10 font-bold">Upcoming Schedule</h5>
         </div>
 
@@ -22,7 +22,7 @@ export default function Join() {
           {schedules.map((schedule, index) => (
             <div
               key={index}
-              className="bg-[#cffafe] shadow-lg rounded-lg py-3 max-w-sm w-full"
+              className="bg-[#cffafe] shadow-lg rounded-lg py-3 max-w-sm w-full lg:w-[500px] "
             >
               <div className="flex justify-between items-center">
                 <div className="flex justify-center mx-10 bg-white rounded px-2">
