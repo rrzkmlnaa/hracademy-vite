@@ -27,7 +27,7 @@ export default function Modul() {
             Academy berdasarkan standar degree global{" "}
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left mt-10 lg:mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left mt-10 lg:py-12 lg:mt-10">
           {content.map((item, index) => (
             <p key={index}>
               {index + 1}. {item}

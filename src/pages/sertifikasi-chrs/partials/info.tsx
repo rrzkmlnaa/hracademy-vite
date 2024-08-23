@@ -1,5 +1,5 @@
 import React from "react";
-import Jumbotron from "../../../components/jumbo/Ready";
+import Jumbotron from "../../../components/jumbo/Jumbotron";
 
 export default function Comp2() {
   return (

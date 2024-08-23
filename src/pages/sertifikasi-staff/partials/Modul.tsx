@@ -28,14 +28,14 @@ export default function Modul() {
             Academy
           </p>
         </div>
-        <div className="text-left  text-[19px] font-extralight mt-10">
+        <div className="text-left lg:py-10 text-[19px] font-extralight mt-10">
           {content.map((item, index) => (
             <p key={index} className="mb-2">
               {index + 1}. {item}
             </p>
           ))}
         </div>
-        <div className="text-left text-[19px] font-extralight mt-10">
+        <div className="text-left text-[19px] font-extralight mt-10 lg:mt-5">
           <h1 className="text-3xl font-bold mb-5" style={{ color: "#bfdbfe" }}>
             Sertifikat yang didapatkan:
           </h1>

@@ -9,7 +9,6 @@ const schedules = [
   { type: "Offline", date: "23 - 27 September" },
   { type: "Offline", date: "30 Sept - 4 Oktober" },
 ];
-
 export default function Join() {
   return (
     <>
@@ -25,12 +24,12 @@ export default function Join() {
               className="bg-[#cffafe] shadow-lg rounded-lg py-3 max-w-sm w-full lg:w-[500px] "
             >
               <div className="flex justify-between items-center">
-                <div className="flex justify-center mx-10 bg-white rounded px-2">
-                  <div className="text-xl font-normal text-black">
+                <div className="flex justify-center mx-5 bg-white rounded">
+                  <div className="text-xl font-normal px-5 text-black">
                     {schedule.type}
                   </div>
                 </div>
-                <p className="flex flex-1 justify-center items-center text-[#a3a3a3] font-bold">
+                <p className="flex flex-1 justify-center items-center text-[#a3a3a3] px-5 font-bold">
                   {schedule.date}
                 </p>
               </div>
