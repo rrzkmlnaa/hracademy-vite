@@ -88,7 +88,12 @@ export default function Index() {
         </div>
 
         <div className="w-full h-auto flex justify-center items-center pt-10">
-          <Button className='px-14 y-6 text-xl' variant='yellow'>Register Now</Button>
+          <UnstyledLink to="https://api.whatsapp.com/send/?phone=6285942210587&text=Saya+tertarik+untuk+Menggunakan+Layanan+di+Perusahan+Anda.+Apakah+bisa+dibantu+jelaskan+lebih+lanjut+mengenai+.....%3F&type=phone_number&app_absent=0">
+            <Button variant="yellow" className="px-14 y-6 text-xl">
+              Register Now
+            </Button>
+          </UnstyledLink>
+          {/* <Button className='px-14 y-6 text-xl' variant='yellow'>Register Now</Button> */}
         </div>
       </section>
 

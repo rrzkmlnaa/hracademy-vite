@@ -13,6 +13,21 @@ const CareerDevelopment = lazy(
 const CareerCoaching = lazy(
   () => import("pages/services/career-development/slug/career-coacing")
 );
+const CoverLetter = lazy(
+  () => import("pages/services/career-development/slug/cover-letter-revision")
+);
+const CvRevision = lazy(
+  () => import("pages/services/career-development/slug/cv-revision")
+);
+const InterviewPrep = lazy(
+  () => import("pages/services/career-development/slug/interview-prep")
+);
+const JobSearch = lazy(
+  () => import("pages/services/career-development/slug/job-search-strategy")
+);
+const Linkedin = lazy(
+  () => import("pages/services/career-development/slug/linkedin-revision")
+);
 const TrainingCertification = lazy(
   () => import("pages/services/training-and-certification/index")
 );
@@ -108,6 +123,46 @@ export const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading />}>
             <CareerCoaching />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/services/career-development/cover-letter-revision",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <CoverLetter />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/services/career-development/cv-revision",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <CvRevision />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/services/career-development/interview-prep",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <InterviewPrep />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/services/career-development/job-search-strategy",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <JobSearch />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/services/career-development/linkedin-revision",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Linkedin />
           </Suspense>
         ),
       },
