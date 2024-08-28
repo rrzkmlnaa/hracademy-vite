@@ -62,13 +62,14 @@ const SertifikasiHR = lazy(() => import("pages/sertifikasi-hr/index"));
 const ResourceFrom = lazy(() => import("pages/resources/slug/page"));
 const Artikel = lazy(() => import("pages/featured/slug/page"));
 const Featured = lazy(() => import("pages/featured/index"));
-const Staff = lazy(() => import("pages/classDetails/staff-hr/index"));
-const Chrs = lazy(() => import("pages/classDetails/chrs/index"));
-const Chrp = lazy(() => import("pages/classDetails/chrp/index"));
-const Chcgm = lazy(() => import("pages/classDetails/chcgm/index"));
 const SertifikasiCHRP = lazy(() => import("pages/sertifikasi-chrp/index"));
 const SertifikasiCHRS = lazy(() => import("pages/sertifikasi-chrs/index"));
 const SertifikasiStaff = lazy(() => import("pages/sertifikasi-staff/index"));
+const Hallo = lazy(() => import("pages/classDetails/index"));
+const Chrs = lazy(() => import("pages/classDetails/slug/chrs"));
+const Chrp = lazy(() => import("pages/classDetails/slug/chrp"));
+const Chcgm = lazy(() => import("pages/classDetails/slug/chcgm"));
+const HrStaff = lazy(() => import("pages/classDetails/slug/hr-staff"));
 // import Staff = lazy (() => import('pages/classDetails/staff-hr/index'))
 
 const Loading = () => <div>Loading...</div>;
@@ -295,38 +296,6 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/classDetails/staff-hr",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <Staff />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/classDetails/chrs",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <Chrs />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/classDetails/chrp",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <Chrp />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/classDetails/chcgm",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <Chcgm />
-          </Suspense>
-        ),
-      },
-      {
         path: "/pages/sertifikasi-chrp",
         element: (
           <Suspense fallback={<Loading />}>
@@ -347,6 +316,46 @@ export const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading />}>
             <SertifikasiStaff />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/classDetails",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Hallo />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/classDetails/chrs",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Chrs />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/classDetails/hr-staff",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <HrStaff />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/classDetails/chcgm",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Chcgm />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/classDetails/chrp",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Chrp />
           </Suspense>
         ),
       },

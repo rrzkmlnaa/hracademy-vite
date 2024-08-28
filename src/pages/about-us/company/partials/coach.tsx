@@ -21,7 +21,6 @@ export default function Coach() {
           <UnderlineLink to ='#coach' className='text-gray-500 text-xl w-fit'>
             CEO, PELATIH SENIOR
           </UnderlineLink>
-          <h3 className='font-bold text-primary text-4xl'>TEMUI PEMIMPIN KAMI</h3>
           <h4 className='font-bold text-primary text-2xl'>SRI WULANDARI, EPC, S.IP, MBA.</h4>
           <p className="text-justify">
             Coach Wulan, visioner di balik HR Academy, membawa

@@ -10,7 +10,7 @@ export default function Course() {
       title: 'Staff HR',
       imageUrl: '/images/SH.jpg',
       price: 'Rp. 2.700.000',
-      link: '/classDetails/staff-hr'
+      link: '/classDetails/hr-staff'
     },
     {
       title: 'Certified Human Resources Supervisor HR Academy',
