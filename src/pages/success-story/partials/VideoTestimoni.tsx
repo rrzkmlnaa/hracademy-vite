@@ -3,38 +3,68 @@ import VideoPlayer from './VideoPlayer';
 
 const data = [
     {
-        videoSrc: '/videos/cepi.mp4',
-        thumbnail: '/videos/thumbnail-cepi.png',
+        videoSrc: 'https://www.youtube.com/watch?v=J6933_V6b1o&feature=youtu.be',
+        thumbnail: '',
+        name: '...',
+        pelatihan: '',
+    },
+    {
+        videoSrc: 'https://www.youtube.com/watch?v=qVqwllLYwf0&feature=youtu.be',
+        thumbnail: '',
+        name: 'Pak Gean',
+        pelatihan: '',
+    },
+    {
+        videoSrc: 'https://www.youtube.com/watch?v=8AQG0iaHdvI&feature=youtu.be',
+        thumbnail: '',
+        name: 'Pak Dimas',
+        pelatihan: '',
+    },
+    {
+        videoSrc: 'https://www.youtube.com/watch?v=49LlUscMjUg',
+        thumbnail: '',
+        name: 'Pak Ongky',
+        pelatihan: '',
+    },
+    {
+        videoSrc: 'https://www.youtube.com/watch?v=g3EH65K8NP0&feature=youtu.be',
+        thumbnail: '',
+        name: 'Pak Robby',
+        pelatihan: '',
+    },
+    {
+        videoSrc: 'https://www.youtube.com/watch?v=xMm5PkeQx9Q',
+        thumbnail: '',
         name: 'Pak Cepi',
         pelatihan: 'Pelatihan dan Sertifikasi Manager HR SDM Level 6',
     },
     {
-        videoSrc: '/videos/wiwik.mp4',
-        thumbnail: '/videos/thumbnail-wiwik.png',
+        videoSrc: 'https://www.youtube.com/watch?v=FOXT3eipBzM',
+        thumbnail: '',
         name: 'Ibu Wiwik',
         pelatihan: 'Pelatihan dan Sertifikasi Supervisor SDM Level 4',
     },
     {
-        videoSrc: '/videos/budi.mp4',
-        thumbnail: '/videos/thumbnail-budi.png',
+        videoSrc: 'https://www.youtube.com/watch?v=MPC6gC5Oh78',
+        thumbnail: '',
         name: 'Pak Budi',
         pelatihan: '',
     },
     {
-        videoSrc: '/videos/hari.mp4',
-        thumbnail: '/videos/thumbnail-hari.png',
+        videoSrc: 'https://www.youtube.com/watch?v=AOAH7nq--mI',
+        thumbnail: ' ',
         name: 'Pak Hari',
         pelatihan: '',
     },
     {
-        videoSrc: '/videos/rumi.mp4',
+        videoSrc: 'https://www.youtube.com/watch?v=nl5YPyEF9gg',
         thumbnail: '/videos/thumbnail-rumi.png',
         name: 'Ibu Rumi',
         pelatihan: '',
     },
     {
-        videoSrc: '/videos/gina.mp4',
-        thumbnail: '/videos/thumbnail-gina.png',
+        videoSrc: 'https://www.youtube.com/watch?v=2zJN8gNWolM',
+        thumbnail: '',
         name: 'Ibu Gina',
         pelatihan: '',
     },
@@ -78,8 +108,8 @@ const data = [
 ];
 
 const mobileData = {
-    videoSrc: '/videos/gean.mp4',
-    thumbnail: '/videos/thumbnail-gean.png',
+    videoSrc: 'https://www.youtube.com/watch?v=qVqwllLYwf0',
+    thumbnail: '',
 };
 
 const VideoDesktop = () => {
@@ -139,19 +169,37 @@ const VideoDesktop = () => {
     );
 };
 
-const VideoMobile = () => (
-    <section className="lg:hidden w-full h-screen relative">
-        <video
-            className="w-full h-full object-cover"
-            controls
-            playsInline
-            poster={mobileData.thumbnail}
-        >
-            <source src={mobileData.videoSrc} type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
-    </section>
-);
+const VideoMobile = () => {
+    const isYouTube = mobileData.videoSrc.includes('youtube.com') || mobileData.videoSrc.includes('youtu.be');
+    const videoId = isYouTube ? new URL(mobileData.videoSrc).searchParams.get('v') : '';
+
+    return (
+        <section className="lg:hidden w-full h-screen relative">
+            {isYouTube ? (
+                <iframe
+                    width="100%"
+                    height="100%"
+                    src={`https://www.youtube.com/embed/${videoId}`}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0"
+                    title="Video Testimonial"
+                ></iframe>
+            ) : (
+                <video
+                    className="w-full h-full object-cover"
+                    controls
+                    playsInline
+                    poster={mobileData.thumbnail}
+                >
+                    <source src={mobileData.videoSrc} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            )}
+        </section>
+    );
+};
 
 export default function VideoTestimoni() {
     return (
