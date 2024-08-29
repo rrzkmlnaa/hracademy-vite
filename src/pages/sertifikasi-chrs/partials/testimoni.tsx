@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useRef } from 'react';
 import VideoPlayer from './VideoTesti';
 
@@ -41,42 +39,42 @@ const data = [
         pelatihan: '',
     },
     {
-        videoSrc: '/videos/wiwiek.mp4',
-        thumbnail: '/videos/thumbnail-wiwiek.png',
+        videoSrc: 'https://www.youtube.com/watch?v=boYWXGaWPNo',
+        thumbnail: '',
         name: 'Ibu Wiwiek',
         pelatihan: '',
     },
     {
-        videoSrc: '/videos/lonita.mp4',
-        thumbnail: '/videos/thumbnail-lonita.png',
+        videoSrc: 'https://www.youtube.com/watch?v=roZfM7f-IVQ',
+        thumbnail: '',
+        name: 'Ibu Lina',
+        pelatihan: '',
+    },
+    {
+        videoSrc: 'https://www.youtube.com/watch?v=JbRW_HgBmzQ',
+        thumbnail: '',
         name: 'Ibu Lonita',
         pelatihan: '',
     },
     {
-        videoSrc: '/videos/onky.mp4',
-        thumbnail: '/videos/thumbnail-onky.png',
-        name: 'Pak Onky',
+        videoSrc: 'https://www.youtube.com/watch?v=JteaOWPC1ZU',
+        thumbnail: '',
+        name: 'Pak Hafidz',
         pelatihan: '',
     },
     {
-        videoSrc: '/videos/robby.mp4',
-        thumbnail: '/videos/thumbnail-robby.png',
-        name: 'Pak Robby',
+        videoSrc: 'https://www.youtube.com/watch?v=mWsDz5XyUZo',
+        thumbnail: '',
+        name: 'Ibu Annieza',
         pelatihan: '',
     },
+    // Menambahkan video YouTube
     {
-        videoSrc: '/videos/eko.mp4',
-        thumbnail: '/videos/thumbnail-eko.png',
+        videoSrc: 'https://www.youtube.com/watch?v=Rrp4N5Uzaco',
+        thumbnail: '',
         name: 'Pak Eko',
         pelatihan: '',
-    },
-    {
-        videoSrc: '/videos/lina.mp4',
-        thumbnail: '/videos/thumbnail-lina.png',
-        name: 'Ibu Lina',
-        pelatihan: '',
-    },
-    
+    }
 ];
 
 const mobileData = [
